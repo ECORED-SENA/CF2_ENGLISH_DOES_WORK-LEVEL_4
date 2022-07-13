@@ -1,14 +1,29 @@
 .banner-principal-decorativo
   &-1
-    animation: float1 3.5s ease-in-out infinite alternate
+    animation: float2 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 0%
+    left: 0%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 0%
+    right: 0%
+  &-3
+    animation: float2 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 50%
+    right: 10%
+  &-4
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 50%
+    left: 10%
+  &-5
+    animation: float2 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 80%
+    left: 20%
 
 
 @keyframes float1
@@ -17,3 +32,542 @@
 
   100%
     transform: translateY(0px)
+
+@keyframes float2
+  0%
+    transform: translateX(20px)
+
+  100%
+    transform: translateX(0px)
+
+.banner-principal__info
+  width: 600px
+  background-image: url("../assets/curso/portada/banner-principal-decorativo-6.svg")
+  align-self: stretch
+  background-repeat: no-repeat
+  background-position: 15% 10%
+  background-size: 50%
+  animation: Flitp1 6s ease infinite
+
+@keyframes Flitp1
+  0%
+    background-image: url("../assets/curso/portada/banner-principal-decorativo-6.svg")
+  50%
+    background-image: url("../assets/curso/portada/banner-principal-decorativo-6.svg")
+    background-position: 25% 10%
+  100%
+    background-image: url("../assets/curso/portada/banner-principal-decorativo-6.svg")
+
+.banner-principal__row .banner-principal__img
+  width: 370px
+
+.banner-principal__componente
+  margin-top: 35px
+  h1
+  .span1
+    padding-top: 0px
+    color: white
+    display: block
+  span
+    color: #3C3FA7
+    display: block
+
+.tarjeta.color-primario
+  width: 100%
+
+.tarjeta.color-secundario
+  background-color: #FF5F65
+  width: 100%
+
+.tarjeta.color-terciario
+  background-color: #6B8DFF
+  width: 100%
+
+.tarjeta.color-cuartiario
+  background-color: #3C3FA7
+  width: 100%
+
+.tarjeta-audio.color-primario
+  border-color: #FFDFE0
+  background-color: white
+  .tarjeta-audio__texto
+    color: #12263F
+    span
+      color: #FF5F65
+
+.tarjeta-audio.color-secundario
+  border-color: #01AC57
+  .tarjeta-audio__texto
+    color: #01AC57
+
+.audio.color-primario .audio__btn, .tarjeta-audio.color-primario .audio__btn, .tarjeta-dialogo.color-primario .audio__btn
+  background-color: #FF5F65
+
+.audio.color-secundario .audio__btn, .tarjeta-audio.color-secundario .audio__btn, .tarjeta-dialogo.color-secundario .audio__btn
+  background-color: #01AC57
+
+.tarjeta--azul
+  background-color: #FFF7DA
+
+.tarjeta--amarilla
+  background-color: #FFE891
+
+.acordion__titulo
+  span
+    color: #FF5F65
+
+.tarjeta.tarjeta--azul.acordion__activo
+  background-color: #FFF0B5
+
+.tabla-a.color-acento-botones thead
+  border-color: #3C3FA7
+  background-color: #3C3FA7
+  color: white
+
+.slyder-a__tipo-a .slyder-a__bullets
+  bottom: 0px
+
+.slyder-a__tipo-a .slyder-a__btn--sigt
+  right: 0px
+
+.slyder-a__tipo-a .slyder-a__btn--atrs
+  left: 0px
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #3C3FA7
+
+.carousel-control-next, .carousel-control-prev
+  width: 8%
+
+button:hover, button:focus, [type="button"]:hover, [type="button"]:focus, [type="reset"]:hover, [type="reset"]:focus, [type="submit"]:hover, [type="submit"]:focus
+  background-color: #FFD947
+
+.carousel-control-next-icon
+  background-image: url(../assets/componentes/arrow2.svg)
+  transform: rotate(-90deg)
+  position: relative
+  right: -10px
+
+.carousel-control-prev-icon
+  background-image: url(../assets/componentes/arrow2.svg)
+  transform: rotate(90deg)
+  position: relative
+  left: -10px
+
+.bg-color1
+  height: 330px
+  background-color: #FFF0B5
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+
+.bg-color2
+  height: 330px
+  background-color: #FFBFC1
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+
+.bg-color3
+  height: 330px
+  background-color: #C4D1FF
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+
+.bg-color4
+  background-image: url(../assets/curso/tema1/img7.svg)
+  background-repeat: no-repeat
+  background-size: contain
+
+.bg-color5
+  background-color: #FFF7DA
+
+.bg-color6
+  background-color: #FFD947
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+
+.bg-color7
+  background-color: #FFD947
+
+.bg-color8
+  background-color: #FFD947
+  border-bottom-left-radius: 15px
+  border-bottom-right-radius: 15px
+
+.bg-color9
+  background-image: url(../assets/curso/tema1/img5.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 200px
+  padding-bottom: 50px
+  padding-left: 50%
+
+.bg-color10
+  background-image: url(../assets/curso/tema1/img13.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+
+.bg-color11
+  background-color: #6B8DFF
+
+.bg-color12
+  background-image: url(../assets/curso/tema1/img15.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+
+.bg-color13
+  background-image: url(../assets/curso/tema1/img18.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+
+.bg-color14
+  background-image: url(../assets/curso/tema1/img19.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+
+.bg-color15
+  background-image: url(../assets/curso/tema1/img20.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: bottom
+
+.bg-color16
+  background-color: white
+  height: 170px
+
+.bg-color17
+  background-color: #FF7F84
+
+.bg-color18
+  background-color: #FF9FA3
+
+.bg-color19
+  background-color: #FFD947
+
+.bg-color20
+  background-color: #3C3FA7
+
+.bg-color21
+  background-color: #FFF7DA
+  border-radius: 15px
+
+.bg-color22
+  background-color: #6B8DFF
+  border-radius: 15px
+
+.bg-color23
+  background-color: white
+  border-radius: 15px
+  height: 140px
+
+.bg-color24
+  background-color: #FFE891
+  border-radius: 15px
+
+.bg-color25
+  background-image: url(../assets/curso/tema3/img1.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color26
+  background-color: white
+  border-radius: 15px
+
+.bg-color27
+  background-image: url(../assets/curso/tema3/img2.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color28
+  background-image: url(../assets/curso/tema3/img3.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color29
+  background-image: url(../assets/curso/tema3/img4.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color30
+  background-image: url(../assets/curso/tema3/img5.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color31
+  background-image: url(../assets/curso/tema3/img6.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color32
+  background-image: url(../assets/curso/tema3/img7.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color33
+  background-image: url(../assets/curso/tema3/img8.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color34
+  background-image: url(../assets/curso/tema3/img9.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color35
+  background-image: url(../assets/curso/tema3/img10.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color36
+  background-image: url(../assets/curso/tema3/img11.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color37
+  background-image: url(../assets/curso/tema3/img12.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color38
+  background-image: url(../assets/curso/tema3/img13.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color39
+  background-image: url(../assets/curso/tema3/img14.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color40
+  background-image: url(../assets/curso/tema3/img15.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color41
+  background-image: url(../assets/curso/tema3/img16.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color42
+  background-image: url(../assets/curso/tema3/img17.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color43
+  background-image: url(../assets/curso/tema3/img18.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color44
+  background-image: url(../assets/curso/tema3/img19.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color45
+  background-image: url(../assets/curso/tema3/img20.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color46
+  background-image: url(../assets/curso/tema3/img21.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.bg-color47
+  background-image: url(../assets/curso/tema3/img22.png)
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 270px
+  padding-bottom: 20px
+  padding-left: 20px
+  padding-right: 20px
+  margin: 10px
+
+.border0
+  border-top: 3px solid #3C3FA7
+
+.border2
+  border-left: 3px solid #3C3FA7
+
+.border3
+  border-left: 3px solid #3C3FA7
+  border-right: 3px solid #3C3FA7
+
+.border4
+  border-bottom: 3px solid #3C3FA7
+
+.txt-color1
+  color: #3C3FA7
+
+.txt-color2
+  color: #FF5F65
+  font-weight: bold
+
+.txt-color3
+  color: #FF5F65 !important
+
+.txt-color4
+  color: #FFD947 !important
+
+.txt-color5
+  color: white
+
+.fig-position
+  position: relative
+  top: -70px
+
+.border1
+  border-left: 4px solid #3C3FA7
+
+@media screen and ( max-width: 992px )
+
+  .carousel-control-next-icon
+    right: 0px
+
+  .carousel-control-prev-icon
+    left: -30px
+
+  .bg-color1
+    height: 300px
+
+  .bg-color2
+    height: 390px
+
+  .bg-color3
+    height: 310px
+
+  .bg-color4
+    background-image: none
+    background-color: #E1E8FF
+
+  .bg-color10
+    background-image: none
+    background-color: #3C3FA7
+
+  .bg-color12
+    background-image: none
+    background-color: #3C3FA7
+
+  .bg-color13
+    background-color: #ffdfe0
+
+  .bg-color14
+    background-color: #e1e8ff
+
+  .fig-rota
+    transform: rotate(90deg)
+
+  .fig-position
+    top: 10px
+
+  .border1
+    border-left: 0px
+    border-top: 4px solid #3C3FA7
