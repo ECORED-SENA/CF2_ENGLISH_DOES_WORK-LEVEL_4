@@ -14,11 +14,11 @@
     p.mb-5 Si desea practicar, el siguiente PDF presenta los textos del video anterior, tanto en inglés como en español.
     .row.justify-content-center
       .col-auto
-        a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+        a.anexo.mb-4(:href="obtenerLink('downloads/Anexo2.pdf')" target="_blank")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
-            p #[b Anexo]. intro_guion
+            p #[b Anexo]. Guion
 
 </template>
 

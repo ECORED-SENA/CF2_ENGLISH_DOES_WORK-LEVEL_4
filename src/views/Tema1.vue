@@ -583,7 +583,7 @@
                 table
                   thead
                     tr
-                      th(style="width:17%")
+                      th(style="width:15%")
                       th #[i /id/]
                       th #[i /t/]
                       th #[i /d/]
