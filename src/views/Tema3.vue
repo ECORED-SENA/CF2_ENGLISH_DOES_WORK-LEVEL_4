@@ -7,21 +7,19 @@
       .titulo-principal__numero
         span 3
       h1 #[i Let's talk about history] (Hablemos de historia)
-    .row
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 In order to describe and talk about characters and relevant events in history that occurred in the past, it is necessary to know not only the grammatical structures of the verb tense in question, it is also important to delve into the appropriate vocabulary, which is the main input that allows us to build the complex ideas that we want to convey about what happened in history, etc.]
-      .col-lg-6
-        p Para poder describir y hablar sobre personajes y hechos relevantes de la historia ocurridos en el pasado, es necesario conocer no solo las estructuras gramaticales propias del tiempo verbal en cuestión, también es importante profundizar en el vocabulario adecuado, el cual es el principal insumo que nos permite construir las ideas complejas que queremos transmitir sobre lo acontecido en la historia, etc.
+    .row.justify-content-end
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema3/img23.png', style="width: 350px")
+      .col-lg-7
+        Traduccion.color-primario(:dialogo="traduccion1")
     Separador
     #t_3_1
     .titulo-segundo.color-acento-botones
       h2 3.1 #[i Famous legends and people in history] (Leyendas y personajes famosos de la historia)
     .row.mb-4
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 Throughout history, there have been a lot of names that sound familiar and some stories that are known for many people. Depending on the country and the language, stories and characters change and English is not the exception, so it is important to know some of the most famous names and stories.]
-      .col-lg-6
-        p A través de la historia, ha habido muchos nombres que suenan conocidos y algunas historias que son sabidas por muchas personas. Dependiendo del país y el idioma, las historias y personajes cambian y el inglés no es la excepción, por lo tanto, es importante conocer algunos de los nombres e historias más famosas.
-    p.mb-5 A continuación, se invita a escuchar algunos ejemplos de personajes históricos:
+      .col-12
+        Traduccion.color-primario(:dialogo="traduccion2")
     .row.mb-5
       .col-12
         .row.justify-content-center
@@ -101,11 +99,9 @@
     #t_3_2
     .titulo-segundo.color-acento-botones
       h2 3.2 #[i Important monuments and historical events] (Monumentos y eventos históricos importantes)
-    .row.mb-5
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 Thanks to past simple, we are able to talk about stories of our life and events that we have lived. So, it is important to have the necessary vocabulary in order to talk about history. There are some specific words in historical contexts.]
-      .col-lg-6
-        p Gracias al pasado simple, podemos hablar de historias de nuestras vidas y eventos que hemos vivido. Por lo tanto, es importante tener el vocabulario necesario para hablar de historia. Hay algunas palabras específicas en contextos históricos.
+    .row.mb-4
+      .col-12
+        Traduccion.color-primario(:dialogo="traduccion3")
     .row.mb-5
       .col-12
         .row.justify-content-center
@@ -198,10 +194,43 @@
 </template>
 
 <script>
+import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema3',
+  components: {
+    Traduccion,
+  },
   data: () => ({
-    // variables de vue
+    traduccion1: {
+      dialogo: [
+        {
+          textoIng:
+            'In order to describe and talk about characters and relevant events in history that occurred in the past, it is necessary to know not only the grammatical structures of the verb tense in question, it is also important to delve into the appropriate vocabulary, which is the main input that allows us to build the complex ideas that we want to convey about what happened in history, etc.',
+          textoEsp:
+            'Para poder describir y hablar sobre personajes y hechos relevantes de la historia ocurridos en el pasado, es necesario conocer no solo las estructuras gramaticales propias del tiempo verbal en cuestión, también es importante profundizar en el vocabulario adecuado, el cual es el principal insumo que nos permite construir las ideas complejas que queremos transmitir sobre lo acontecido en la historia, etc.',
+        },
+      ],
+    },
+    traduccion2: {
+      dialogo: [
+        {
+          textoIng:
+            'Throughout history, there have been a lot of names that sound familiar and some stories that are known for many people. Depending on the country and the language, stories and characters change and English is not the exception, so it is important to know some of the most famous names and stories.',
+          textoEsp:
+            'A través de la historia, ha habido muchos nombres que suenan conocidos y algunas historias que son sabidas por muchas personas. Dependiendo del país y el idioma, las historias y personajes cambian y el inglés no es la excepción, por lo tanto, es importante conocer algunos de los nombres e historias más famosas.',
+        },
+      ],
+    },
+    traduccion3: {
+      dialogo: [
+        {
+          textoIng:
+            'Thanks to past simple, we are able to talk about stories of our life and events that we have lived. So, it is important to have the necessary vocabulary in order to talk about history. There are some specific words in historical contexts.',
+          textoEsp:
+            'Gracias al pasado simple, podemos hablar de historias de nuestras vidas y eventos que hemos vivido. Por lo tanto, es importante tener el vocabulario necesario para hablar de historia. Hay algunas palabras específicas en contextos históricos.',
+        },
+      ],
+    },
   }),
   mounted() {
     this.$nextTick(() => {

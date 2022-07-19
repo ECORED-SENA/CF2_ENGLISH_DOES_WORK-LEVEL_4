@@ -7,11 +7,12 @@
       .titulo-principal__numero
         span 2
       h1 #[i WH- questions in the past tense] (Preguntas con WH- en pasado)
-    .row.mb-4
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 As we saw in the topic about the verb “to be” in the past simple tense, there are two types of questions: closed questions or “yes or no questions”, and open questions or “informative questions” that do not ask for a confirmation or denial, but for a particular fact or information. These are also called “wh-questions” since the question words usually start with “wh-”, for example: #[span.txt-color2 Where? Why? When?]]
-      .col-lg-6
-        p Al igual que lo vimos en el tema del verbo #[i.txt-color2 “to be”] en pasado simple, hay dos tipos de preguntas: las preguntas cerradas o “preguntas de sí o no”, y las preguntas abiertas o #[b “preguntas informativas”], que no piden una confirmación o negación, sino que preguntan por un dato o información en particular. Estas también son llamadas #[i.txt-color2 “wh- questions”] (preguntas con wh-), debido que las palabras de pregunta generalmente comienzan con “wh-”, por ejemplo: #[i.txt-color2 Where?] (¿Dónde?) #[i.txt-color2 Why?] (¿Por qué?) #[i.txt-color2 When?] (¿Cuándo?), etc.
+    .row.justify-content-end.mb-4
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema2/img1.png', style="width: 350px")
+      .col-lg-7
+        Traduccion.color-primario(:dialogo="traduccion1")
     p #[i.txt-color3 Below we will see a fairly complete table of interrogative pronouns (interrogative words), in which although they are not all of them, the vast majority are there, including variations of questions with #[b "what"], various types of questions with #[b "how"], and the difference between #[b “who”], #[b “whom”] and #[b “whose”].]
     p.mb-5 A continuación, veremos una tabla bastante completa de pronombres interrogativos (palabras interrogativas), en la que, si bien no están todos, está la gran mayoría, incluyendo variaciones de preguntas con #[i.txt-color2 “what”], varios tipos de preguntas con #[i.txt-color2 “how”], y la diferencia entre #[i.txt-color2 “who”], #[i.txt-color2 “whom”] y #[i.txt-color2 “whose”]
     .titulo-sexto.color-acento-contenido
@@ -885,10 +886,8 @@
               p #[i.txt-color4 The form “whom” is used to ask for the object of a verb or of a preposition in very formal or old-fashioned English. “Whom” is not very common, modern English usage prefers “who” instead of “whom” in all but the most formal contexts, especially in formal writing.]
               p.txt-color5 La forma #[b #[i.txt-color4 “whom”]] se usa para preguntar por el objeto de un verbo o de una preposición en un inglés muy formal o anticuado. #[b #[i.txt-color4 “Whom”]] no es muy común, el uso del inglés moderno prefiere #[b #[i.txt-color4 “who”]] en lugar de #[b #[i.txt-color4 “whom”]] en todos los contextos, excepto en los más formales, especialmente en la escritura formal.
     .row.mb-5
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 Previously, we saw how to form interrogative sentences for closed questions (“yes or no questions”), now we will see how to form open questions (information questions) with interrogative pronouns “Wh-”.]
-      .col-lg-6
-        p Previamente, vimos cómo formar frases interrogativas para preguntas cerradas (“preguntas de sí o no”), ahora veremos cómo formar preguntas abiertas (preguntas de información) con pronombres interrogativos #[i.txt-color2 “Wh-”].
+      .col-12
+        Traduccion.color-primario(:dialogo="traduccion2")
     .row
       .col-12.bg-color21
         .p-3
@@ -997,10 +996,33 @@
 </template>
 
 <script>
+import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema2',
+  components: {
+    Traduccion,
+  },
   data: () => ({
-    // variables de vue
+    traduccion1: {
+      dialogo: [
+        {
+          textoIng:
+            'As we saw in the topic about the verb “to be” in the past simple tense, there are two types of questions: closed questions or “yes or no questions”, and open questions or “informative questions” that do not ask for a confirmation or denial, but for a particular fact or information. These are also called “wh-questions” since the question words usually start with “wh-”, for example: <color1>Where? Why? When?</color1>',
+          textoEsp:
+            'Al igual que lo vimos en el tema del verbo <color2>“to be”</color2> en pasado simple, hay dos tipos de preguntas: las preguntas cerradas o “preguntas de sí o no”, y las preguntas abiertas o <color2>“preguntas informativas”</color2>, que no piden una confirmación o negación, sino que preguntan por un dato o información en particular. Estas también son llamadas <color2>“wh- questions”</color2> (preguntas con wh-), debido que las palabras de pregunta generalmente comienzan con “wh-”, por ejemplo: <color2>Where?</color2> (¿Dónde?) <color2>Why?</color2> (¿Por qué?) <color2>When?</color2> (¿Cuándo?), etc.',
+        },
+      ],
+    },
+    traduccion2: {
+      dialogo: [
+        {
+          textoIng:
+            'Previously, we saw how to form interrogative sentences for closed questions (“yes or no questions”), now we will see how to form open questions (information questions) with interrogative pronouns “Wh-”.',
+          textoEsp:
+            'Previamente, vimos cómo formar frases interrogativas para preguntas cerradas (“preguntas de sí o no”), ahora veremos cómo formar preguntas abiertas (preguntas de información) con pronombres interrogativos “Wh-”.',
+        },
+      ],
+    },
   }),
   mounted() {
     this.$nextTick(() => {

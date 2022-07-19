@@ -7,28 +7,34 @@
       .titulo-principal__numero
         span 1
       h1 #[i Past simple] (Pasado simple)
-    .row
-      .col-lg-6.mb-4.mb-lg-0
-        p.txt-color1 #[i The past simple is the tense used to describe an action that happened before the present tense and that is no longer happening. ]
-        p.txt-color1 #[i In the simple past tense there is only one form or conjugation of each verb in the past tense for all grammatical persons (with the exception of the verb “to be” which has two forms: “was” and “were”). With most verbs, the past tense is formed by adding #[span.txt-color2 “-ed”], these verbs are called regular verbs; the ones that do not fall into this group with the ending #[span.txt-color2 “-ed”] are called irregular verbs and must be learned by heart since there is no rule to help us predict their form in the past tense.]
-      .col-lg-6
-        p El pasado simple es el tiempo que se usa para describir una acción que sucedió antes del tiempo presente y que ya no está sucediendo.
-        p En el tiempo pasado simple, solo hay una forma o conjugación de cada verbo en pasado para todas las personas gramaticales (con excepción del verbo #[i.txt-color2 “to be”], que tiene dos formas: #[i.txt-color2 “was”] y #[i.txt-color2 “were”]). Con la mayoría de los verbos, el tiempo pasado se forma agregando #[i.txt-color2 “-ed”], a estos verbos se les llama verbos regulares; a los que no están en este grupo con terminación #[i.txt-color2 “-ed”] se les llama verbos irregulares y deben aprenderse de memoria debido a que no hay una regla que nos ayude a predecir su forma en pasado.
+    Traduccion.color-primario(:dialogo="traduccion1")
     Separador
     #t_1_1
     .titulo-segundo.color-acento-botones
       h2 1.1 #[i Regular verbs] (Verbos regulares)
     p.txt-color3 #[i In the past simple tense, it is easy to conjugate regular verbs since the formula is easy: base form of the verb + ed. But there are certain rules of spelling and pronunciation that must be followed in certain cases.] 
-    p.mb-5 En el tiempo pasado simple es fácil conjugar los verbos regulares, ya que la fórmula es fácil: forma base del verbo + ed. Pero hay ciertas reglas de ortografía y pronunciación que se deben seguir en ciertos casos.
+    p.mb-5 En el tiempo pasado simple es fácil conjugar los verbos regulares, ya que la fórmula es fácil: forma base del #[i.txt-color2 verbo + ed]. Pero hay ciertas reglas de ortografía y pronunciación que se deben seguir en ciertos casos.
     h3 #[i.txt-color3 Spelling rules for words with -ed] / Reglas de ortografía de palabras con #[i.txt-color3 “-ed”]
     p #[i.txt-color3 To begin with, we must know that in English the words ending with “-ed” can have other uses than being verbs in the simple past tense, they can also be used as past participles in the perfect tenses or as adjectives to qualify or describe something.]
-    p.mb-5 Para comenzar, debemos saber que en inglés las palabras terminadas con “-ed” pueden tener otros usos diferentes a ser verbos en tiempo pasado simple, pueden usarse también como participios pasados en los tiempos perfectos o como adjetivos para calificar o describir algo. A continuación, podemos ver algunos ejemplos.
+    p.mb-5 Para comenzar, debemos saber que en inglés las palabras terminadas con #[i.txt-color2 “-ed”] pueden tener otros usos diferentes a ser verbos en tiempo pasado simple, pueden usarse también como participios pasados en los tiempos perfectos o como adjetivos para calificar o describir algo. A continuación, podemos ver algunos ejemplos.
     .row.justify-content-center.mb-5
       .col-11.col-lg.mb-4.mb-lg-0
         .tarjeta-avatar
-          img(src='@/assets/curso/tema1/img1.svg' alt='AvatarTop')
+          .bg-fig1
+            figure
+              img(src='@/assets/curso/tema1/img1.svg')
+          .bg-fig2
+            figure
+              img(src='@/assets/curso/tema1/img2.svg')
           .tarjeta.color-primario
             .p-4
+              .row.justify-content-center
+                .col-auto.bg-color48.mt-4.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
               p.text-center.mt-4.mb-0 #[b #[i.txt-color3 Past tense verbs]]
               p.text-center.mb-4 #[b Verbos en tiempo pasado]
               TarjetaAudio.color-primario.mb-3(
@@ -48,9 +54,21 @@
               )
       .col-11.col-lg.mb-4.mb-lg-0
         .tarjeta-avatar
-          img(src='@/assets/curso/tema1/img2.svg' alt='AvatarTop')
+          .bg-fig1
+            figure
+              img(src='@/assets/curso/tema1/img1.svg')
+          .bg-fig2
+            figure
+              img(src='@/assets/curso/tema1/img2.svg')
           .tarjeta.color-secundario
             .p-4
+              .row.justify-content-center
+                .col-auto.bg-color48.mt-4.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
               p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Past participles]]
               p.text-center.mb-4 #[b Participios pasados]
               TarjetaAudio.color-primario.mb-3(
@@ -70,9 +88,21 @@
               )
       .col-11.col-lg
         .tarjeta-avatar
-          img(src='@/assets/curso/tema1/img1.svg' alt='AvatarTop')
+          .bg-fig1
+            figure
+              img(src='@/assets/curso/tema1/img1.svg')
+          .bg-fig2
+            figure
+              img(src='@/assets/curso/tema1/img2.svg')
           .tarjeta.color-terciario
             .p-4
+              .row.justify-content-center
+                .col-auto.bg-color48.mt-4.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
               p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Adjectives]]
               p.text-center.mb-4 #[b Adjetivos]
               TarjetaAudio.color-primario.mb-3(
@@ -138,7 +168,7 @@
                 )
                 p.ms-3 Ella estaba #[b alarmada] y #[b estupefacta].
     p #[i.txt-color3 We are going to learn the correct spelling of words that end in “-ed” and we will mainly use regular past tense verbs as examples, although the same rules apply to all words that end in “-ed”.]
-    p.mb-5 Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[b.txt-color3 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[b.txt-color3 “-ed”].
+    p.mb-5 Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[i.txt-color2 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[i.txt-color2 “-ed”].
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="<span>General Rule</span> / Regla general")
         .col-lg-4.mb-4.mb-lg-0
@@ -147,230 +177,261 @@
         .col-lg-8
           p #[i.txt-color2 In general, we just add -ed to the end of a regular verb or other type of "-ed word".]
           p.mb-4 Generalmente, solo agregamos -ed al final de un verbo regular u otro tipo de palabra "-ed".
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>visit</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>visited</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>walk</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>walked</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>return</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>returned</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 visit]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 visited]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 walk]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 walked]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 return]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 returned]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+      .row(titulo="<span>Words ending in &quot;Consonant + E&quot;</span> / Palabras que terminan en &quot;Consonante + E&quot;")
+        .col-lg-4.mb-4.mb-lg-0
+          figure
+            img(src='@/assets/curso/tema1/img4.png', style="width: 350px").m-auto
+        .col-lg-8
+          p #[i.txt-color2 Just add -d to the end.]
+          p.mb-4 Simplemente, agregue -d al final.
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 love]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 loved]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 change]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 changed]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 exercise]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 exercised]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
       .row(titulo="<span>Consonant + Vowel + Consonant</span> / Consonante + Vocal + Consonante")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If it ends in C+V+C and the last syllable is stressed, we double the final consonant.]
           p Si termina en C+V+C y la última sílaba está acentuada, #[b se duplica la consonante final].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>stop</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>stopped</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>beg</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>begged</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>admit</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>admitted</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 stop]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 stopped]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 beg]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 begged]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 admit]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 admitted]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
         .col-lg-6.border1
           p.mt-4.mt-lg-0 #[i.txt-color2 If it ends in C+V+C and the last syllable is unstressed, we don’t double the final consonant.]
           p Si termina en C+V+C y la última sílaba no está acentuada, #[b no se duplica la consonante final].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>happen</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>happened</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>visit</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>visited</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>remember</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>remembered</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 happen]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 happened]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 visit]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 visited]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 remember]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 remembered]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
       .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If the verb ends in “C+Y”: the “y” is removed and we add “ -ied”.]
           p Si el verbo termina en “C+Y”: se elimina la #[b “y”] y se añade #[i.txt-color2 “-ied”].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>copy</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>copied</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>study</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>studied</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>multiply</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>multiplied</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 copy]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 copied]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 study]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 studied]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 multiply]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 multiplied]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
         .col-lg-6.border1
           p.mt-4.mt-lg-0 #[i.txt-color2 If the verb ends in “V+Y”: we only add “-ed”.]
           p Si el verbo termina en “V+Y”: solo se agrega #[i.txt-color2 “-ed”].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>pray</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>prayed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>obey</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>obeyed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>enjoy</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg', style="width: 30px").fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>enjoyed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 pray]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 prayed]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 obey]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 obeyed]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 enjoy]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 enjoyed]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
       .row(titulo="<span>Words ending in “W” or “X”</span> / Palabras terminadas en “W” o “X”")
         .col-lg-4.mb-4.mb-lg-0
           figure
@@ -378,141 +439,135 @@
         .col-lg-8
           p #[i.txt-color2 If the verb ends in “W” or “X”: we only add “-ed”.]
           p.mb-4 Si el verbo termina en “W” o “X”: Solo se agrega #[i.txt-color2 “-ed”].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>allow</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>allowed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>chew</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>chewed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>glow</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>glowed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>fix</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>fixed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>mix</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>mixed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>relax</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-auto
-              TarjetaAudio.color-primario(
-                texto="<em><span>relaxed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row
+            .col-lg-6
+              .row.mx-1.mb-3
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 allow]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 allowed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+              .row.mx-1.mb-3
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 chew]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 chewed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+              .row.mx-1.mb-3
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 glow]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 glowed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+            .col-lg-6
+              .row.mx-1.mb-3
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 fix]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 fixed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+              .row.mx-1.mb-3
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 mix]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 mixed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+              .row.mx-1
+                .col-auto.bg-color49
+                  .p-2
+                    .row.align-items-center
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 relax]
+                      .col-auto
+                        figure
+                          img(src='@/assets/curso/tema1/img3.svg')
+                      .col-auto
+                        p.mb-0 #[i.txt-color2 relaxed]
+                      .col-auto
+                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
       .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
-          .row.mb-4
+          .row.mb-5
             .col-auto
               figure
                 img(src='@/assets/curso/tema1/img4.svg')
             .col
               p #[i.txt-color2 In British English, we double the final “L” and add “-ed”.]
               p En inglés británico, #[b se duplica la “L”] final y se añade #[i.txt-color2 “-ed”].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>equal</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>equalled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>travel</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>travelled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>control</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>controlled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 equal]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 equalled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 travel]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 travelled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 control]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 controlled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
         .col-lg-6.border1
           .row.mb-4
             .col-auto
@@ -521,48 +576,45 @@
             .col
               p #[i.txt-color2 In American English, if the last syllable is stressed, we double the final “L” and add “-ed”, if the last syllable is unstressed, we just add “-ed”.]
               p En inglés americano, #[b si la última sílaba está acentuada, se duplica la “L”] final y se añade #[i.txt-color2 “-ed”], si la última sílaba #[b no está acentuada], solo se añade #[i.txt-color2 “-ed”].
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>equal</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>equaled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center.mb-4
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>travel</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>traveled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-          .row.align-items-center.justify-content-center
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>control</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
-            .col-auto
-              figure.my-3.my-lg-0
-                img(src='@/assets/curso/tema1/img3.svg').fig-rota
-            .col-lg
-              TarjetaAudio.color-primario(
-                texto="<em><span>controled</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              )
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 equal]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 equaled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1.mb-3
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 travel]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 traveled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+          .row.mx-1
+            .col-auto.bg-color49
+              .p-2
+                .row.align-items-center
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 control]
+                  .col-auto
+                    figure
+                      img(src='@/assets/curso/tema1/img3.svg')
+                  .col-auto
+                    p.mb-0 #[i.txt-color2 controlled]
+                  .col-auto
+                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
     p.mb-5 Después de haber estudiado la ortografía de las palabras con la terminación #[i.txt-color2 -ed], en este apartado estudiaremos las #[i.txt-color2 “Pronunciation rules for words with -ed”] / Reglas de pronunciación de palabras con #[i.txt-color2 “-ed”].
     .row.mb-5
       .col-12.bg-color4
@@ -579,82 +631,52 @@
                   .p-4
                     p.mb-0 #[i.txt-color3 Because English is not a phonetic language, there are three different ways to pronounce “-ed” at the end of a word. Listen to the following audio and pay close attention to how the words sound at the end.]
               p.mb-4 Debido a que el inglés no es un idioma fonético, existen tres formas diferentes de pronunciar “-ed” al final de una palabra. Escuche el siguiente audio y ponga mucha atención a cómo suenan las palabras al final.
-              .tabla-a.color-acento-botones
+              .tabla-a.color-acento-botones.mb-4
                 table
                   thead
                     tr
-                      th(style="width:15%")
+                      th
                       th #[i /id/]
                       th #[i /t/]
                       th #[i /d/]
                   tbody.bg-color5
                     tr
                       td.text-center #[b #[i.txt-color1 Past tense verbs]]
+                      td 
+                        p.text-center.mb-0 #[i.txt-color2 counted]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>counted</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 looked]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>looked</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
-                      td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>listened</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 listened]
                     tr
                       td.text-center #[b #[i.txt-color1 Past participles]]
+                      td 
+                        p.text-center.mb-0 #[i.txt-color2 needed]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>needed</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 passed]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>passed</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
-                      td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>called</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 called]
                     tr
                       td.text-center #[b #[i.txt-color1 Adjectives]]
+                      td 
+                        p.text-center.mb-0 #[i.txt-color2 concentrated]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>concentrated</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 astonished]
                       td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>astonished</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
-                      td
-                        TarjetaAudio.color-primario(
-                          texto="<em><span>alarmed</span></em>"
-                          :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                          no-barra
-                        )
+                        p.text-center.mb-0 #[i.txt-color2 alarmed]
+              .row.justify-content-center
+                .col-lg-8
+                  TarjetaAudio.color-primario(
+                    texto=""
+                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                    @audio-hover="mostrarIndicadorTarjetaAudio = false"
+                  )
     .row.mb-5
-      .col-lg-6
-        p #[i.txt-color1 We are going to look at the 3 ways of pronouncing “-ed” at the end of words in English, which are /id/, /t/ and /d/.]
-        p #[i.txt-color1 We have to remember that these rules are not only for regular verbs in past simple tense, but also for regular past participles (used in perfect tenses) and adjectives that end in “-ed”. Depending on which letter the word or verb ends with in its base form (before conjugating or adding the suffix), we determine how the “-ed” will sound, whether as /id/, /t/ or /d/.]
-      .col-lg-6
-        p Vamos a ver las 3 formas de pronunciar “-ed” al final de las palabras en inglés, que son /id/, /t/ y /d/.
-        p Debemos recordar que estas reglas no son solo para verbos regulares en pasado simple, sino también para participios regulares (usados en tiempos perfectos) y adjetivos que terminan en “-ed”. Dependiendo con qué letra termina la palabra o el verbo en su forma base (antes de conjugarse o de agregársele el sufijo), se determina cómo va a sonar el “-ed”, si como /id/, /t/ o /d/.
+      .col-lg-7.mb-4.mb-lg-0
+        Traduccion.color-primario(:dialogo="traduccion2")
+      .col-lg-4
+        figure
+          img(src='@/assets/curso/tema1/img10.png', style="width: 350px").m-auto
     p #[i.txt-color3 Now you can watch a video to better understand the pronunciation rules for words ending in -ed, and listen to the following audios to review the pronunciation of each word.]
     p.mb-5 Ahora observe un video para entender mejor las normas de pronunciación de las palabras terminadas en -ed, y escuche los siguientes audios para repasar la pronunciación de cada palabra.
     figure.mb-5
@@ -929,11 +951,12 @@
     #t_1_2
     .titulo-segundo.color-acento-botones
       h2 1.2 #[i Irregular verbs] (Verbos irregulares)
-    .row.mb-4
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 Some verbs are irregular and their past forms do not end in “-ed”, in contrast, they can change drastically or, on the contrary, not change at all, leaving the same word as a verb in the present and the past simple. In these cases, it is recommended to learn them by heart since there is no logical pattern that can be used or followed with them.]
-      .col-lg-6
-        p Algunos verbos son irregulares y sus formas en pasado no terminan en “-ed”, en contraste, pueden cambiar drásticamente o, por el contrario, no cambiar en nada, dejando la misma palabra como verbo en el presente y el pasado simple. En estos casos, se recomienda aprenderlos de memoria, porque no hay un patrón lógico que se pueda usar o seguir con ellos.
+    .row.justify-content-end.mb-4
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema1/img11.png', style="width: 350px")
+      .col-lg-7
+        Traduccion.color-primario(:dialogo="traduccion3")
     p.mb-5 A continuación, se presenta la lista de los principales verbos irregulares utilizados en inglés.
     .row.justify-content-center.mb-5
       .col-11.col-lg-4.p-3
@@ -941,10 +964,13 @@
           p.mb-0 #[b Tabla 1]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
         .row
           .col-12.bg-color9
-            Audio.color-primario(
-              :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              @audio-hover="mostrarIndicadorAudio = false"
-            )
+            .row.justify-content-center
+                .col-auto.bg-color48.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
           .col-12
             .row
               .col-4(style="background-color: #FFD947")
@@ -1144,10 +1170,13 @@
           p.mb-0 #[b Tabla 2]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
         .row
           .col-12.bg-color9
-            Audio.color-primario(
-              :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              @audio-hover="mostrarIndicadorAudio = false"
-            )
+            .row.justify-content-center
+                .col-auto.bg-color48.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
           .col-12
             .row
               .col-4(style="background-color: #FFD947")
@@ -1339,10 +1368,13 @@
           p.mb-0 #[b Tabla 3]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
         .row
           .col-12.bg-color9
-            Audio.color-primario(
-              :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-              @audio-hover="mostrarIndicadorAudio = false"
-            )
+            .row.justify-content-center
+                .col-auto.bg-color48.px-0
+                  .px-1.py-1
+                    Audio.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
           .col-12
             .row
               .col-4(style="background-color: #FFD947")
@@ -1554,16 +1586,17 @@
     #t_1_3
     .titulo-segundo.color-acento-botones
       h2 1.3 #[i Affirmative, negative and interrogative structures] (Estructuras afirmativas, negativas e interrogativas)
-    .row.mb-5
-      .col-lg-6.mb-4.mb-lg-0
-        p #[i.txt-color1 In the simple past, the structures of sentences that use the verb "to be" as the main verb are different from sentences that use other verbs as the main verb (regardless of whether they are in the same tense). Let's see the phrases (or grammatical structures) used to express this information:]
-      .col-lg-6
-        p En el pasado simple son diferentes las estructuras de las oraciones que usan el verbo #[i "to be"] como verbo principal a las oraciones que usan otros verbos como verbo principal (sin importar que estén en el mismo tiempo verbal). Vamos a ver las frases (o estructuras gramaticales) usadas para expresar esta información:
+    .row.justify-content-end.mb-4
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema1/img12.png', style="width: 350px")
+      .col-lg-7
+        Traduccion.color-primario(:dialogo="traduccion4")
     .tarjeta.tarjeta--amarilla.p-2.mb-5
       SlyderA
-        .row.justify-content-center.mx-2
+        .row.justify-content-center.mx-2.p-3
           .col-lg-10
-            .row
+            .row.mb-4
               .col-auto.mb-4.bg-color11
                 .p-3
                   h3.mb-0.text-white #[i Affirmative structure] / Estructura afirmativa
@@ -1578,51 +1611,33 @@
                       img(src='@/assets/curso/tema1/img7.png').m-auto
               .row
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>I lived in Spain.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Yo viví en España.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>You Drew that painting.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Tú dibujaste esa pintura.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>He played football yesterday.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 Él jugó fútbol ayer.
+                  p.mb-0 #[i.txt-color2 I #[span.txt-color6 lived] in Spain.]
+                  p.mb-4 Yo viví en España.
+                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 Drew] that painting.]
+                  p.mb-4 Tú dibujaste esa pintura.
+                  p.mb-0 #[i.txt-color2 He #[span.txt-color6 played] football yesterday.]
+                  p.mb-0 Él jugó fútbol ayer.
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>She flew in a helicopter.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Ella voló en un helicóptero.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>It barked really loud.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 (Eso) Ladró muy fuerte.
+                  p.mb-0 #[i.txt-color2 She #[span.txt-color6 flew] in a helicopter.]
+                  p.mb-4 Ella voló en un helicóptero.
+                  p.mb-0 #[i.txt-color2 It #[span.txt-color6 barked] really loud.]
+                  p.mb-4 (Eso) Ladró muy fuerte.
+                  p.mb-0 #[i.txt-color2 We #[span.txt-color6 ate] the whole cake.]
+                  p.mb-0 Nosotros nos comimos todo el pastel.
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>We ate the whole cake.</span></em>"
+                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 cooked] lasagna last night.]
+                  p.mb-4 Ustedes cocinaron lasaña anoche.
+                  p.mb-0 #[i.txt-color2 They #[span.txt-color6 bought] a house a year ago.]
+                  p.mb-0 Ellos compraron una casa hace un año.
+            .row.justify-content-center
+              .col-lg-10
+                TarjetaAudio.color-primario(
+                    texto=""
                     :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                   )
-                  p.ms-3.mb-4 Nosotros nos comimos todo el pastel.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>You cooked lasagna last night.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Ustedes cocinaron lasaña anoche.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>They bought a house a year ago.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 Ellos compraron una casa hace un año.
-        .row.justify-content-center.mx-2
+        .row.justify-content-center.mx-2.p-3
           .col-lg-10
-            .row
+            .row.mb-4
               .col-auto.mb-4.bg-color11
                 .p-3
                   h3.mb-0.text-white #[i Negative structure] / Estructura negativa
@@ -1637,49 +1652,31 @@
                       img(src='@/assets/curso/tema1/img8.png').m-auto
               .row
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>I didn’t live in Spain.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Yo no viví en España.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>You did not draw that.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Tú no dibujaste eso.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>He didn’t play football yesterday.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 Él no jugó fútbol ayer.
+                  p.mb-0 #[i.txt-color2 I #[span.txt-color6 didn’t live] in Spain.]
+                  p.mb-4 Yo no viví en España.
+                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 did not] draw that.]
+                  p.mb-4 Tú no dibujaste eso.
+                  p.mb-0 #[i.txt-color2 He #[span.txt-color6 didn’t] play football yesterday.]
+                  p.mb-0 Él no jugó fútbol ayer.
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>She did not fly in a helicopter.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Ella no voló en un helicóptero.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>It didn’t bark that loud.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 (Eso) No ladró tan fuerte.
+                  p.mb-0 #[i.txt-color2 She #[span.txt-color6 did not] fly in a helicopter.]
+                  p.mb-4 Ella no voló en un helicóptero.
+                  p.mb-0 #[i.txt-color2 It #[span.txt-color6 didn’t] bark that loud.]
+                  p.mb-4 (Eso) No ladró tan fuerte.
+                  p.mb-0 #[i.txt-color2 We #[span.txt-color6 did not] eat the whole cake.]
+                  p.mb-0 Nosotros no nos comimos todo el pastel.
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>We did not eat the whole cake.</span></em>"
+                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 didn’t] cook lasagna last night.]
+                  p.mb-4 Ustedes no cocinaron lasaña anoche.
+                  p.mb-0 #[i.txt-color2 They #[span.txt-color6 did not] buy a house a year ago.]
+                  p.mb-0 Ellos no compraron una casa hace un año.
+            .row.justify-content-center
+              .col-lg-10
+                TarjetaAudio.color-primario(
+                    texto=""
                     :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                   )
-                  p.ms-3.mb-4 Nosotros no nos comimos todo el pastel.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>You didn’t cook lasagna last night.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 Ustedes no cocinaron lasaña anoche.
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>They did not buy a house a year ago.</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 Ellos no compraron una casa hace un año.
-        .row.justify-content-center.mx-2
+        .row.justify-content-center.mx-2.p-3
           .col-lg-10
             .row
               .col-auto.mb-4.bg-color11
@@ -1696,48 +1693,30 @@
                       img(src='@/assets/curso/tema1/img9.png').m-auto
               .row
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did I live in Spain?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 ¿Yo viví en España?
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did you draw that?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 ¿Tú dibujaste eso?
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did he play football yesterday?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 ¿Él jugó fútbol ayer?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] I live in Spain?]
+                  p.mb-4 ¿Yo viví en España?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] you draw that?]
+                  p.mb-4 ¿Tú dibujaste eso?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] he play football yesterday?]
+                  p.mb-0 ¿Él jugó fútbol ayer?
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did she fly in a helicopter?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 ¿Ella voló en un helicóptero?
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did it bark loud?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 ¿(Eso) Ladró fuerte?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] she fly in a helicopter?]
+                  p.mb-4 ¿Ella voló en un helicóptero?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] it bark loud?]
+                  p.mb-4 ¿(Eso) Ladró fuerte?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] we eat the whole cake?]
+                  p.mb-0 ¿Nosotros nos comimos todo el pastel?
                 .col-lg
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did we eat the whole cake?</span></em>"
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] you cook lasagna last night?]
+                  p.mb-4 ¿Ustedes cocinaron lasaña anoche?
+                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] they buy a house a year ago?]
+                  p.mb-0 ¿Ellos compraron una casa hace un año?
+            .row.justify-content-center
+              .col-lg-10
+                TarjetaAudio.color-primario(
+                    texto=""
                     :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                   )
-                  p.ms-3.mb-4 ¿Nosotros nos comimos todo el pastel?
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did you cook lasagna last night?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3.mb-4 ¿Ustedes cocinaron lasaña anoche?
-                  TarjetaAudio.color-primario.mb-2(
-                    texto="<em><span>Did they buy a house a year ago?</span></em>"
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                  )
-                  p.ms-3 ¿Ellos compraron una casa hace un año?
     .row.mb-5
       .col-12
         .row.justify-content-end
@@ -1826,10 +1805,59 @@
 </template>
 
 <script>
+import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema1',
+  components: {
+    Traduccion,
+  },
   data: () => ({
-    // variables de vue
+    mostrarIndicador: true,
+    indicadorImagenZoom: true,
+    indicadorTarjetaFlip: true,
+    indicadorTarjetaSlide: true,
+    mostrarIndicadorAudio: true,
+    mostrarIndicadorTarjetaAudio: true,
+    traduccion1: {
+      dialogo: [
+        {
+          textoIng:
+            'The past simple is the tense used to describe an action that happened before the present tense and that is no longer happening.<br><br>In the simple past tense there is only one form or conjugation of each verb in the past tense for all grammatical persons (with the exception of the verb “to be” which has two forms: “was” and “were”). With most verbs, the past tense is formed by adding “-ed”, these verbs are called regular verbs; the ones that do not fall into this group with the ending “-ed” are called irregular verbs and must be learned by heart since there is no rule to help us predict their form in the past tense.',
+          textoEsp:
+            'El pasado simple es el tiempo que se usa para describir una acción que sucedió antes del tiempo presente y que ya no está sucediendo.<br><br>En el tiempo pasado simple, solo hay una forma o conjugación de cada verbo en pasado para todas las personas gramaticales (con excepción del verbo <b>“to be”</b>, que tiene dos formas: <b>“was”</b> y <b>“were”</b>). Con la mayoría de los verbos, el tiempo pasado se forma agregando <b>“-ed”</b>, a estos verbos se les llama verbos regulares; a los que no están en este grupo con terminación <b>“-ed”</b> se les llama verbos irregulares y deben aprenderse de memoria debido a que no hay una regla que nos ayude a predecir su forma en pasado.',
+        },
+      ],
+    },
+    traduccion2: {
+      dialogo: [
+        {
+          textoIng:
+            'We are going to look at the 3 ways of pronouncing “-ed” at the end of words in English, which are /id/, /t/ and /d/.<br><br>We have to remember that these rules are not only for regular verbs in past simple tense, but also for regular past participles (used in perfect tenses) and adjectives that end in “-ed”. Depending on which letter the word or verb ends with in its base form (before conjugating or adding the suffix), we determine how the “-ed” will sound, whether as /id/, /t/ or /d/.',
+          textoEsp:
+            'Vamos a ver las 3 formas de pronunciar “-ed” al final de las palabras en inglés, que son /id/, /t/ y /d/.<br><br>Debemos recordar que estas reglas no son solo para verbos regulares en pasado simple, sino también para participios regulares (usados en tiempos perfectos) y adjetivos que terminan en “-ed”. Dependiendo con qué letra termina la palabra o el verbo en su forma base (antes de conjugarse o de agregársele el sufijo), se determina cómo va a sonar el “-ed”, si como /id/, /t/ o /d/.',
+        },
+      ],
+    },
+    traduccion3: {
+      dialogo: [
+        {
+          textoIng:
+            'Some verbs are irregular and their past forms do not end in “-ed”, in contrast, they can change drastically or, on the contrary, not change at all, leaving the same word as a verb in the present and the past simple. In these cases, it is recommended to learn them by heart since there is no logical pattern that can be used or followed with them.',
+          textoEsp:
+            'Algunos verbos son irregulares y sus formas en pasado no terminan en “-ed”, en contraste, pueden cambiar drásticamente o, por el contrario, no cambiar en nada, dejando la misma palabra como verbo en el presente y el pasado simple. En estos casos, se recomienda aprenderlos de memoria, porque no hay un patrón lógico que se pueda usar o seguir con ellos.',
+        },
+      ],
+    },
+    traduccion4: {
+      dialogo: [
+        {
+          textoIng:
+            'In the simple past, the structures of sentences that use the verb "to be" as the main verb are different from sentences that use other verbs as the main verb (regardless of whether they are in the same tense). Let´s see the phrases (or grammatical structures) used to express this information:',
+          textoEsp:
+            'En el pasado simple son diferentes las estructuras de las oraciones que usan el verbo "to be" como verbo principal a las oraciones que usan otros verbos como verbo principal (sin importar que estén en el mismo tiempo verbal). Vamos a ver las frases (o estructuras gramaticales) usadas para expresar esta información:',
+        },
+      ],
+    },
   }),
   mounted() {
     this.$nextTick(() => {
