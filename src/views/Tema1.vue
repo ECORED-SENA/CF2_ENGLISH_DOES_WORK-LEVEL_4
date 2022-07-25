@@ -7,16 +7,31 @@
       .titulo-principal__numero
         span 1
       h1 #[i Past simple] (Pasado simple)
-    Traduccion.color-primario(:dialogo="traduccion1")
+    .row
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema1/img13.png', style="width: 350px").m-auto
+      .col-lg-8
+        Traduccion.color-primario(:dialogo="traduccion1")
     Separador
     #t_1_1
     .titulo-segundo.color-acento-botones
       h2 1.1 #[i Regular verbs] (Verbos regulares)
-    p.txt-color3 #[i In the past simple tense, it is easy to conjugate regular verbs since the formula is easy: base form of the verb + ed. But there are certain rules of spelling and pronunciation that must be followed in certain cases.] 
-    p.mb-5 En el tiempo pasado simple es fácil conjugar los verbos regulares, ya que la fórmula es fácil: forma base del #[i.txt-color2 verbo + ed]. Pero hay ciertas reglas de ortografía y pronunciación que se deben seguir en ciertos casos.
-    h3 #[i.txt-color3 Spelling rules for words with -ed] / Reglas de ortografía de palabras con #[i.txt-color3 “-ed”]
-    p #[i.txt-color3 To begin with, we must know that in English the words ending with “-ed” can have other uses than being verbs in the simple past tense, they can also be used as past participles in the perfect tenses or as adjectives to qualify or describe something.]
-    p.mb-5 Para comenzar, debemos saber que en inglés las palabras terminadas con #[i.txt-color2 “-ed”] pueden tener otros usos diferentes a ser verbos en tiempo pasado simple, pueden usarse también como participios pasados en los tiempos perfectos o como adjetivos para calificar o describir algo. A continuación, podemos ver algunos ejemplos.
+    .row.mb-5
+      .col-lg-7.mb-4.mb-lg-0
+        p.txt-color3 #[i In the past simple tense, it is easy to conjugate regular verbs since the formula is easy: base form of the verb + ed. But there are certain rules of spelling and pronunciation that must be followed in certain cases.] 
+        p En el tiempo pasado simple es fácil conjugar los verbos regulares, ya que la fórmula es fácil: forma base del #[i.txt-color2 verbo + ed]. Pero hay ciertas reglas de ortografía y pronunciación que se deben seguir en ciertos casos.
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema1/img14.png', style="width: 450px").m-auto
+    h3.mb-5 #[i.txt-color3 Spelling rules for words with -ed] / Reglas de ortografía de palabras con #[i.txt-color3 “-ed”]
+    .row
+      .col-lg-5.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema1/img15.png', style="width: 450px").m-auto
+      .col-lg-7
+        p #[i.txt-color3 To begin with, we must know that in English the words ending with “-ed” can have other uses than being verbs in the simple past tense, they can also be used as past participles in the perfect tenses or as adjectives to qualify or describe something.]
+        p.mb-5 Para comenzar, debemos saber que en inglés las palabras terminadas con #[i.txt-color2 “-ed”] pueden tener otros usos diferentes a ser verbos en tiempo pasado simple, pueden usarse también como participios pasados en los tiempos perfectos o como adjetivos para calificar o describir algo. A continuación, podemos ver algunos ejemplos.
     .row.justify-content-center.mb-5
       .col-11.col-lg.mb-4.mb-lg-0
         .tarjeta-avatar
@@ -122,14 +137,14 @@
               )
     p.mb-5 En el siguiente recurso, podemos observar algunos ejemplos utilizando palabras en tiempo pasado con la terminación ed.
     .row.mb-5
-      .col-lg
+      .col-12.col-lg
         .p-2
-          .row
-            .col-12.px-0
+          .row.bg-color1
+            .col-12.bg-color2.px-0
               figure
                 img(src='@/assets/curso/tema1/img1.png')
-            .col-12.bg-color1
-              .p-4
+            .col-12.bg-color3
+              .p-3
                 p.text-center.mb-0 #[b #[i.txt-color3 Past tense verbs]]
                 p.text-center.mb-5 #[b Verbos en tiempo pasado]
                 TarjetaAudio.color-primario.mb-3(
@@ -137,14 +152,14 @@
                   :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                 )
                 p.ms-3 Yo #[b conté] las monedas en la alcancía.
-      .col-lg
+      .col-12.col-lg
         .p-2
-          .row
-            .col-12.px-0
+          .row.bg-color1
+            .col-12.bg-color2.px-0
               figure
                 img(src='@/assets/curso/tema1/img2.png')
-            .col-12.bg-color2
-              .p-4
+            .col-12.bg-color3
+              .p-3
                 p.text-center.mb-0 #[b #[i.txt-color3 Past participle in the present perfect time]]
                 p.text-center.mb-5 #[b Participio pasado en tiempo presente perfecto]
                 TarjetaAudio.color-primario.mb-3(
@@ -152,14 +167,14 @@
                   :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                 )
                 p.ms-3 Nosotros nunca hemos #[b necesitado] ayuda con nuestras tareas.
-      .col-lg
+      .col-12.col-lg
         .p-2
-          .row
-            .col-12.px-0
+          .row.bg-color1
+            .col-12.bg-color2.px-0
               figure
                 img(src='@/assets/curso/tema1/img3.png')
             .col-12.bg-color3
-              .p-4
+              .p-3
                 p.text-center.mb-0 #[b #[i.txt-color3 Adjective describing a person]]
                 p.text-center.mb-5 #[b Adjetivo describiendo a una persona]
                 TarjetaAudio.color-primario.mb-3(
@@ -167,8 +182,13 @@
                   :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                 )
                 p.ms-3 Ella estaba #[b alarmada] y #[b estupefacta].
-    p #[i.txt-color3 We are going to learn the correct spelling of words that end in “-ed” and we will mainly use regular past tense verbs as examples, although the same rules apply to all words that end in “-ed”.]
-    p.mb-5 Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[i.txt-color2 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[i.txt-color2 “-ed”].
+    .row.mb-5
+      .col-lg-4.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema1/img16.png', style="width: 450px").m-auto
+      .col-lg-8
+        p #[i.txt-color3 We are going to learn the correct spelling of words that end in “-ed” and we will mainly use regular past tense verbs as examples, although the same rules apply to all words that end in “-ed”.]
+        p Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[i.txt-color2 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[i.txt-color2 “-ed”].
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
       .row(titulo="<span>General Rule</span> / Regla general")
         .col-lg-4.mb-4.mb-lg-0
@@ -540,8 +560,6 @@
                       img(src='@/assets/curso/tema1/img3.svg')
                   .col-auto
                     p.mb-0 #[i.txt-color2 equalled]
-                  .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -553,8 +571,6 @@
                       img(src='@/assets/curso/tema1/img3.svg')
                   .col-auto
                     p.mb-0 #[i.txt-color2 travelled]
-                  .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -566,8 +582,6 @@
                       img(src='@/assets/curso/tema1/img3.svg')
                   .col-auto
                     p.mb-0 #[i.txt-color2 controlled]
-                  .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
         .col-lg-6.border1
           .row.mb-4
             .col-auto
@@ -629,7 +643,7 @@
               .row.mb-4
                 .col-12.bg-white
                   .p-4
-                    p.mb-0 #[i.txt-color3 Because English is not a phonetic language, there are three different ways to pronounce “-ed” at the end of a word. Listen to the following audio and pay close attention to how the words sound at the end.]
+                    p.mb-0 #[i.txt-color3 Because English is not a phonetic language, there are three different ways to pronounce #[b “-ed”] at the end of a word. Listen to the following audio and pay close attention to how the words sound at the end.]
               p.mb-4 Debido a que el inglés no es un idioma fonético, existen tres formas diferentes de pronunciar “-ed” al final de una palabra. Escuche el siguiente audio y ponga mucha atención a cómo suenan las palabras al final.
               .tabla-a.color-acento-botones.mb-4
                 table
@@ -681,9 +695,9 @@
     p.mb-5 Ahora observe un video para entender mejor las normas de pronunciación de las palabras terminadas en -ed, y escuche los siguientes audios para repasar la pronunciación de cada palabra.
     figure.mb-5
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/PZR9TDdKJAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     p.mb-5 La pronunciación de los verbos terminados en #[i.txt-color2 “-ed”] depende del sonido final. Hay tres maneras de pronunciar #[i.txt-color2 “-ed”]. Lea y escuche algunos ejemplos con su correspondiente pronunciación en #[i.txt-color2 /id/, /t/ o /d/].
-    .row.mb-2
+    .row.mb-5
       .col-lg
         .p-1.h-100
           .tarjeta-avatar
@@ -909,658 +923,781 @@
           .row.align-items-center.justify-content-center
             .col-lg-auto.mb-4.mb-lg-0
               figure
-                img(src='@/assets/curso/tema1/img11.svg', style="width: 30px")
+                img(src='@/assets/curso/tema1/img11.svg', style="width: 50px")
               p.mb-0 #[i.txt-color2 Vowels]
               p.mb-0 #[b.txt-color1 Vocales]
-            .col-lg-6.mb-4.mb-lg-0
+            .col-lg-7.mb-4.mb-lg-0
               p #[i.txt-color2 Words that end in a vowel sound use the /d/ pronunciation for “-ed”.]
-              p.mb-0 Las palabras que terminan en un sonido de vocal usan la pronunciación /d/  para “-ed”.
-            .col-lg-auto.mb-4.mb-lg-0
-              TarjetaAudio.color-primario.mb-3(
-                texto="<em><span>followed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
-              TarjetaAudio.color-primario.mb-3(
-                texto="<em><span>played</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
-              TarjetaAudio.color-primario(
-                texto="<em><span>tried</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
-            .col-lg-auto
-              TarjetaAudio.color-primario.mb-3(
-                texto="<em><span>continued</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
-              TarjetaAudio.color-primario.mb-3(
-                texto="<em><span>enjoyed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
-              TarjetaAudio.color-primario(
-                texto="<em><span>prayed</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                no-barra
-              )
+              p.mb-0 Las palabras que terminan en un sonido de vocal usan la pronunciación /d/ para “-ed”.
+            .col-lg-auto.mx-1.mb-4.mb-lg-0
+              .row.justify-content-center.mb-4
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 followed]
+              .row.justify-content-center.mb-4
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 played]
+              .row.justify-content-center
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 tried]
+            .col-lg-auto.mx-1
+              .row.justify-content-center.mb-4
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 continued]
+              .row.justify-content-center.mb-4
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 enjoyed]
+              .row.justify-content-center
+                .col-6.col-lg.bg-color49
+                  .p-3
+                    p.mb-0.text-center #[i.txt-color2 prayed]
     Separador
     #t_1_2
     .titulo-segundo.color-acento-botones
       h2 1.2 #[i Irregular verbs] (Verbos irregulares)
     .row.justify-content-end.mb-4
-      .col-lg-4.mb-4.mb-lg-0
+      .col-lg-2.mb-4.mb-lg-0
         figure
-          img(src='@/assets/curso/tema1/img11.png', style="width: 350px")
-      .col-lg-7
+          img(src='@/assets/curso/tema1/img21.svg', style="width: 150px").m-auto
+      .col-lg-10
         Traduccion.color-primario(:dialogo="traduccion3")
     p.mb-5 A continuación, se presenta la lista de los principales verbos irregulares utilizados en inglés.
-    .row.justify-content-center.mb-5
-      .col-11.col-lg-4.p-3
-        .titulo-sexto.color-acento-contenido
-          p.mb-0 #[b Tabla 1]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
-        .row
-          .col-12.bg-color9
-            .row.justify-content-center
-                .col-auto.bg-color48.px-0
-                  .px-1.py-1
-                    Audio.color-primario(
+    .row.mb-4
+      .col-auto.bg-color50
+        .p-2
+          p.mb-0 #[i.txt-color2 Irregular verbs] - Verbos irregulares
+    .row.mb-3
+      .col-12.bg-color51
+        .py-4.px-2
+          .row
+            .col-lg-5.mb-4.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img22.svg', style="width: 450px").m-auto
+            .col-lg-6.bg-white.rounded.shadow-sm
+              .p-3
+                .row.mb-3
+                  .col-2
+                  .col-3
+                    p.mb-0 #[b #[i Spanish]]
+                    p.mb-0 Español
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Base Form]]
+                    p.mb-0.txt-color1 Forma Base
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Past Simple]]
+                    p.mb-0.txt-color7 Pasado Simple
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
                       :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-          .col-12
-            .row
-              .col-4(style="background-color: #FFD947")
-                .p-0
-                  p.text-center.mb-0 #[i.txt-color1 #[b Spanish]]
-                  p.text-center.mb-0 #[i.txt-color1 #[b Español]]
-              .col-4(style="background-color: #FF5F65")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Base Form]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Forma Base]]
-              .col-4(style="background-color: #6B8DFF")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Past Simple]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Pasado Simple]]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Empezar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Begin]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Began]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Traer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Bring]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Brought]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Comprar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Buy]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Bought]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Venir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Come]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Came]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Costar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Cost]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Cost]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Cortar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Cut]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Cut]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Hacer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Do]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Did]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Soñar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Dream]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Dreamt / Dreamed]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Conducir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Drive]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Drove]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Comer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Eat]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Ate]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Caer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Fall]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Fell]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Sentir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Feel]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Felt]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Luchar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Fight]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Fought]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Encontrar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Find]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Found]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Volar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Fly]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Flew]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Perdonar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Forgive]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Forgave]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Obtener
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Get]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Got]
-            .row.border0.border4
-              .col-4.border2
-                .p-1
-                  p.mb-0 Dar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Give]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Gave]
-      .col-11.col-lg-4.p-3
-        .titulo-sexto.color-acento-contenido
-          p.mb-0 #[b Tabla 2]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
-        .row
-          .col-12.bg-color9
-            .row.justify-content-center
-                .col-auto.bg-color48.px-0
-                  .px-1.py-1
-                    Audio.color-primario(
+                  .col-3
+                    p.mb-0 Empezar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Begin]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Began]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
                       :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-          .col-12
-            .row
-              .col-4(style="background-color: #FFD947")
-                .p-0
-                  p.text-center.mb-0 #[i.txt-color1 #[b Spanish]]
-                  p.text-center.mb-0 #[i.txt-color1 #[b Español]]
-              .col-4(style="background-color: #FF5F65")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Base Form]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Forma Base]]
-              .col-4(style="background-color: #6B8DFF")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Past Simple]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Pasado Simple]]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Ir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Go]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Went]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Crecer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Grow]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Grew]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Tener
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Have]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Had]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Golpear
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Hit]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Hit]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Sostener
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Hold]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Held]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Mantener
-                  p.mb-0 Conservar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Keep]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Kept]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Saber
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Know]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Knew]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Abandonar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Leave]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Left]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Perder
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Lose]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Lost]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Hacer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Make]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Made]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Reunirse
-                  p.mb-0 Conocerse
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Meet]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Met]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Pagar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Pay]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Paid]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Poner
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Put]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Put]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Renunciar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Quit]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Quit]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Leer
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Read]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Read*]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Correr
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Run]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Ran]
-            .row.border0.border4
-              .col-4.border2
-                .p-1
-                  p.mb-0 Decir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Say]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Said]
-      .col-11.col-lg-4.p-3
-        .titulo-sexto.color-acento-contenido
-          p.mb-0 #[b Tabla 3]. #[i.txt-color3 Irregular verbs] - Verbos irregulares
-        .row
-          .col-12.bg-color9
-            .row.justify-content-center
-                .col-auto.bg-color48.px-0
-                  .px-1.py-1
-                    Audio.color-primario(
+                  .col-3
+                    p.mb-0 Traer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Bring]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Brought]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
                       :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-          .col-12
-            .row
-              .col-4(style="background-color: #FFD947")
-                .p-0
-                  p.text-center.mb-0 #[i.txt-color1 #[b Spanish]]
-                  p.text-center.mb-0 #[i.txt-color1 #[b Español]]
-              .col-4(style="background-color: #FF5F65")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Base Form]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Forma Base]]
-              .col-4(style="background-color: #6B8DFF")
-                .p-0
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Past Simple]]
-                  p.text-center.text-white.mb-0 #[i.txt-color1 #[b Pasado Simple]]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Ver
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 See]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Saw]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Vender
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sell]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sold]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Enviar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Send]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sent]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Cantar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sing]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sang]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Sentarse
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sit]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sat]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Dormir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Sleep]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Slept]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Hablar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Speak]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Spoke]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Deletrear
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Spell]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Spelt / Spelled]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Nadar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Swim]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Swam]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Tomar
-                  p.mb-0 Agarrar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Take]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Took]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Enseñar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Teach]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Taught]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Decir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Tell]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Told]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Pensar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Think]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Thought]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Despertar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Wake]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Woke]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Vestir
-                  p.mb-0 Llevar puesto
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Wear]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Wore]
-            .row.border0
-              .col-4.border2
-                .p-1
-                  p.mb-0 Ganar
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Win]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Won]
-            .row.border0.border4
-              .col-4.border2
-                .p-1
-                  p.mb-0 Escribir
-              .col-4.border2
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Write]
-              .col-4.border3
-                .p-1
-                  p.mb-0.text-center #[i.txt-color2 Wrote]
+                  .col-3
+                    p.mb-0 Comprar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Buy]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Bought]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Venir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Come]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Came]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Costar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Cost]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Cost]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Cortar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Cut]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Cut]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Hacer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Do]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Did]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Soñar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Dream]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Dreamt / Dreamed]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Conducir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Drive]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Drove]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Comer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Eat]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Ate]]
+                .row.align-items-center
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Caer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Fall]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Fell]]
+    .row.mb-3
+      .col-12.bg-color51
+        .py-4.px-2
+          .row
+            .col-lg-5.mb-4.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img23.svg', style="width: 450px").m-auto
+            .col-lg-6.bg-white.rounded.shadow-sm
+              .p-3
+                .row.mb-3
+                  .col-2
+                  .col-3
+                    p.mb-0 #[b #[i Spanish]]
+                    p.mb-0 Español
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Base Form]]
+                    p.mb-0.txt-color1 Forma Base
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Past Simple]]
+                    p.mb-0.txt-color7 Pasado Simple
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Sentir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Feel]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Felt]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Luchar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Fight]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Fought]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Encontrar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Find]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Found]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Volar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Fly]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Flew]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Perdonar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Forgive]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Forgave]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Obtener
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Get]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Got]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Dar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Give]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Gave]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Ir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Go]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Went]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Crecer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Grow]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Grew]]
+                .row.align-items-center
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Tener
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Have]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Had]]
+    .row.mb-3
+      .col-12.bg-color51
+        .py-4.px-2
+          .row
+            .col-lg-5.mb-4.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img24.svg', style="width: 450px").m-auto
+            .col-lg-6.bg-white.rounded.shadow-sm
+              .p-3
+                .row.mb-3
+                  .col-2
+                  .col-3
+                    p.mb-0 #[b #[i Spanish]]
+                    p.mb-0 Español
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Base Form]]
+                    p.mb-0.txt-color1 Forma Base
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Past Simple]]
+                    p.mb-0.txt-color7 Pasado Simple
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Golpear
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Hit]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Hit]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Sostener
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Hold]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Held]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Mantener
+                    p.mb-0 Conservar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Keep]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Kept]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Saber
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Know]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Knew]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Abandonar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Leave]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Left]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Perder
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Lose]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Lost]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Hacer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Make]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Made]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Reunirse
+                    p.mb-0 Conocerse
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Meet]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Met]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Pagar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Pay]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Paid]]
+                .row.align-items-center
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Poner
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Put]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Put]]
+    .row.mb-3
+      .col-12.bg-color51
+        .py-4.px-2
+          .row
+            .col-lg-5.mb-4.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img25.svg', style="width: 450px").m-auto
+            .col-lg-6.bg-white.rounded.shadow-sm
+              .p-3
+                .row.mb-3
+                  .col-2
+                  .col-3
+                    p.mb-0 #[b #[i Spanish]]
+                    p.mb-0 Español
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Base Form]]
+                    p.mb-0.txt-color1 Forma Base
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Past Simple]]
+                    p.mb-0.txt-color7 Pasado Simple
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Renunciar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Quit]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Quit]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Leer
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Read]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Read*]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Correr
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Run]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Ran]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Decir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Say]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Said]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Ver
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 See]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Saw]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Vender
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Sell]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Sold]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Enviar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Send]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Sent]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Cantar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Sing]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Sang]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Sentarse
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Sit]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Sat]]
+                .row.align-items-center
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Dormir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Sleep]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Slept]]
+    .row.mb-3
+      .col-12.bg-color51
+        .py-4.px-2
+          .row
+            .col-lg-5.mb-4.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img26.svg', style="width: 450px").m-auto
+            .col-lg-6.bg-white.rounded.shadow-sm
+              .p-3
+                .row.mb-3
+                  .col-2
+                  .col-3
+                    p.mb-0 #[b #[i Spanish]]
+                    p.mb-0 Español
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Base Form]]
+                    p.mb-0.txt-color1 Forma Base
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Past Simple]]
+                    p.mb-0.txt-color7 Pasado Simple
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Hablar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Speak]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Spoke]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Deletrear
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Spell]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Spelt / Spelled]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Nadar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Swim]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Swam]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Tomar
+                    p.mb-0 Agarrar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Take]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Took]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Enseñar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Teach]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Taught]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Decir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Tell]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Told]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Pensar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Think]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Thought]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Despertar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Wake]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Woke]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Vestir
+                    p.mb-0 Llevar puesto
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Wear]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Wore]]
+                .row.align-items-center.mb-2
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Ganar
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Win]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Won]]
+                .row.align-items-center
+                  .col-2
+                    Audio.m-auto.color-primario(
+                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      @audio-hover="mostrarIndicadorAudio = false"
+                    )
+                  .col-3
+                    p.mb-0 Escribir
+                  .col-3
+                    p.mb-0 #[b #[i.txt-color1 Write]]
+                  .col-4
+                    p.mb-0 #[b #[i.txt-color7 Wrote]]
     .row
       .col-12
         .row.justify-content-end
@@ -1613,8 +1750,8 @@
                 .col-lg
                   p.mb-0 #[i.txt-color2 I #[span.txt-color6 lived] in Spain.]
                   p.mb-4 Yo viví en España.
-                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 Drew] that painting.]
-                  p.mb-4 Tú dibujaste esa pintura.
+                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 Drew] that.]
+                  p.mb-4 Tú dibujaste eso.
                   p.mb-0 #[i.txt-color2 He #[span.txt-color6 played] football yesterday.]
                   p.mb-0 Él jugó fútbol ayer.
                 .col-lg
@@ -1662,7 +1799,7 @@
                   p.mb-0 #[i.txt-color2 She #[span.txt-color6 did not] fly in a helicopter.]
                   p.mb-4 Ella no voló en un helicóptero.
                   p.mb-0 #[i.txt-color2 It #[span.txt-color6 didn’t] bark that loud.]
-                  p.mb-4 (Eso) No ladró tan fuerte.
+                  p.mb-4 Eso no ladró tan fuerte.
                   p.mb-0 #[i.txt-color2 We #[span.txt-color6 did not] eat the whole cake.]
                   p.mb-0 Nosotros no nos comimos todo el pastel.
                 .col-lg
