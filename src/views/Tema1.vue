@@ -1,7 +1,7 @@
 <template lang="pug">
 .curso-main-container.pb-3
   BannerInterno
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+  .container.tarjeta.tarjeta--blanca.p-2.p-md-5
 
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
@@ -47,24 +47,24 @@
                 .col-auto.bg-color48.mt-4.px-0
                   .px-1.py-1
                     Audio.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio39.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
               p.text-center.mt-4.mb-0 #[b #[i.txt-color3 Past tense verbs]]
               p.text-center.mb-4 #[b Verbos en tiempo pasado]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Counted</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio30.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Looked</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio31.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Listened</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio32.mp3')"
                 no-barra
               )
       .col-11.col-lg.mb-4.mb-lg-0
@@ -81,24 +81,24 @@
                 .col-auto.bg-color48.mt-4.px-0
                   .px-1.py-1
                     Audio.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio40.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
               p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Past participles]]
               p.text-center.mb-4 #[b Participios pasados]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Needed</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio33.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Passed</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio34.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Called</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio35.mp3')"
                 no-barra
               )
       .col-11.col-lg
@@ -115,24 +115,24 @@
                 .col-auto.bg-color48.mt-4.px-0
                   .px-1.py-1
                     Audio.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio41.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
               p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Adjectives]]
               p.text-center.mb-4 #[b Adjetivos]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Concentrated</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio36.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Astonished</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio37.mp3')"
                 no-barra
               )
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Alarmed</em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio38.mp3')"
                 no-barra
               )
     p.mb-5 En el siguiente recurso, podemos observar algunos ejemplos utilizando palabras en tiempo pasado con la terminación ed.
@@ -149,7 +149,7 @@
                 p.text-center.mb-5 #[b Verbos en tiempo pasado]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>I counted the coins in the piggy bank.</span></em>"
-                  :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                  :audio="require('@/assets/curso/tema1/audio1.mp3')"
                 )
                 p.ms-3 Yo #[b conté] las monedas en la alcancía.
       .col-12.col-lg
@@ -164,7 +164,7 @@
                 p.text-center.mb-5 #[b Participio pasado en tiempo presente perfecto]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>We have never needed help with our homework.</span></em>"
-                  :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                  :audio="require('@/assets/curso/tema1/audio2.mp3')"
                 )
                 p.ms-3 Nosotros nunca hemos #[b necesitado] ayuda con nuestras tareas.
       .col-12.col-lg
@@ -179,7 +179,7 @@
                 p.text-center.mb-5 #[b Adjetivo describiendo a una persona]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>She was alarmed and astonished.</span></em>"
-                  :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                  :audio="require('@/assets/curso/tema1/audio3.mp3')"
                 )
                 p.ms-3 Ella estaba #[b alarmada] y #[b estupefacta].
     .row.mb-5
@@ -209,7 +209,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 visited]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio42.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -222,7 +222,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 walked]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio43.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -235,7 +235,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 returned]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio44.mp3')")
       .row(titulo="<span>Words ending in &quot;Consonant + E&quot;</span> / Palabras que terminan en &quot;Consonante + E&quot;")
         .col-lg-4.mb-4.mb-lg-0
           figure
@@ -255,7 +255,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 loved]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio45.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -268,7 +268,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 changed]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio46.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -281,7 +281,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 exercised]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio47.mp3')")
       .row(titulo="<span>Consonant + Vowel + Consonant</span> / Consonante + Vocal + Consonante")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If it ends in C+V+C and the last syllable is stressed, we double the final consonant.]
@@ -298,7 +298,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 stopped]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio48.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -311,7 +311,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 begged]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio49.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -324,7 +324,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 admitted]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio50.mp3')")
         .col-lg-6.border1
           p.mt-4.mt-lg-0 #[i.txt-color2 If it ends in C+V+C and the last syllable is unstressed, we don’t double the final consonant.]
           p Si termina en C+V+C y la última sílaba no está acentuada, #[b no se duplica la consonante final].
@@ -340,7 +340,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 happened]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio51.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -353,7 +353,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 visited]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio52.mp3')"**Falta audio52)
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -366,7 +366,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 remembered]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio53.mp3')")
       .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If the verb ends in “C+Y”: the “y” is removed and we add “ -ied”.]
@@ -383,7 +383,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 copied]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio54.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -396,7 +396,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 studied]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio55.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -409,7 +409,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 multiplied]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio56.mp3')")
         .col-lg-6.border1
           p.mt-4.mt-lg-0 #[i.txt-color2 If the verb ends in “V+Y”: we only add “-ed”.]
           p Si el verbo termina en “V+Y”: solo se agrega #[i.txt-color2 “-ed”].
@@ -425,7 +425,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 prayed]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio57.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -438,7 +438,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 obeyed]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio58.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -451,7 +451,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 enjoyed]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio59.mp3')")
       .row(titulo="<span>Words ending in “W” or “X”</span> / Palabras terminadas en “W” o “X”")
         .col-lg-4.mb-4.mb-lg-0
           figure
@@ -473,7 +473,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 allowed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio60.mp3')")
               .row.mx-1.mb-3
                 .col-auto.bg-color49
                   .p-2
@@ -486,7 +486,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 chewed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio61.mp3')")
               .row.mx-1.mb-3
                 .col-auto.bg-color49
                   .p-2
@@ -499,7 +499,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 glowed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio62.mp3')")
             .col-lg-6
               .row.mx-1.mb-3
                 .col-auto.bg-color49
@@ -513,7 +513,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 fixed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio63.mp3')")
               .row.mx-1.mb-3
                 .col-auto.bg-color49
                   .p-2
@@ -526,7 +526,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 mixed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio64.mp3')")
               .row.mx-1
                 .col-auto.bg-color49
                   .p-2
@@ -539,7 +539,7 @@
                       .col-auto
                         p.mb-0 #[i.txt-color2 relaxed]
                       .col-auto
-                        Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                        Audio.color-primario(:audio="require('@/assets/curso/tema1/audio65.mp3')")
       .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
           .row.mb-5
@@ -602,7 +602,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 equaled]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio66.mp3')")
           .row.mx-1.mb-3
             .col-auto.bg-color49
               .p-2
@@ -615,7 +615,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 traveled]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio67.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -628,7 +628,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 controlled]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/componentes/audios/audio-ej.mp3')")
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio68.mp3')")
     p.mb-5 Después de haber estudiado la ortografía de las palabras con la terminación #[i.txt-color2 -ed], en este apartado estudiaremos las #[i.txt-color2 “Pronunciation rules for words with -ed”] / Reglas de pronunciación de palabras con #[i.txt-color2 “-ed”].
     .row.mb-5
       .col-12.bg-color4
@@ -682,7 +682,7 @@
                 .col-lg-8
                   TarjetaAudio.color-primario(
                     texto=""
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                    :audio="require('@/assets/curso/tema1/audio69.mp3')"
                     @audio-hover="mostrarIndicadorTarjetaAudio = false"
                   )
     .row.mb-5
@@ -711,7 +711,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>cheated</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio10.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -721,7 +721,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>expanded</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio11.mp3')"
                       no-barra
                     )
 
@@ -738,7 +738,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>jumped</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio12.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -748,7 +748,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>kicked</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio13.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -758,7 +758,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>sniffed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio14.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -768,7 +768,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>coughed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio15.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -778,7 +778,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>splashed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio16.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -788,7 +788,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>coached</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio17.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -798,7 +798,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>guessed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio18.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -808,7 +808,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>panicked*</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio19.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -818,7 +818,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>relaxed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio20.mp3')"
                       no-barra
                     )
       .col-lg
@@ -834,7 +834,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>traveled</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio21.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -844,7 +844,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>warned</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio22.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -854,7 +854,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>remembered</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio23.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -864,7 +864,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>dragged</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio24.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -874,7 +874,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>shaved</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio25.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -884,7 +884,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>chased</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio26.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -894,7 +894,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>amazed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio27.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -904,7 +904,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>climbed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio28.mp3')"
                       no-barra
                     )
                 .row.align-items-center
@@ -914,7 +914,7 @@
                   .col
                     TarjetaAudio.color-primario(
                       texto="<em><span>seemed</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio29.mp3')"
                       no-barra
                     )
     .row
@@ -931,30 +931,48 @@
               p.mb-0 Las palabras que terminan en un sonido de vocal usan la pronunciación /d/ para “-ed”.
             .col-lg-auto.mx-1.mb-4.mb-lg-0
               .row.justify-content-center.mb-4
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 followed]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>followed</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio4.mp3')"
+                    no-barra
+                  )
               .row.justify-content-center.mb-4
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 played]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>played</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio6.mp3')"
+                    no-barra
+                  )
               .row.justify-content-center
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 tried]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>tried</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio8.mp3')"
+                    no-barra
+                  )
             .col-lg-auto.mx-1
               .row.justify-content-center.mb-4
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 continued]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>continued</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio5.mp3')"
+                    no-barra
+                  )
               .row.justify-content-center.mb-4
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 enjoyed]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>enjoyed</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio7.mp3')"
+                    no-barra
+                  )
               .row.justify-content-center
-                .col-6.col-lg.bg-color49
-                  .p-3
-                    p.mb-0.text-center #[i.txt-color2 prayed]
+                .col-6.col-lg
+                  TarjetaAudio.color-primario(
+                    texto="<em><span>prayed</span></em>"
+                    :audio="require('@/assets/curso/tema1/audio9.mp3')"
+                    no-barra
+                  )
     Separador
     #t_1_2
     .titulo-segundo.color-acento-botones
@@ -993,7 +1011,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio79.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1005,7 +1023,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio80.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1017,7 +1035,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio81.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1029,7 +1047,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio82.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1041,7 +1059,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio83.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1053,7 +1071,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio84.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1065,7 +1083,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio85.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1077,7 +1095,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio86.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1089,7 +1107,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio87.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1101,7 +1119,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio88.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1113,7 +1131,7 @@
                 .row.align-items-center
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio89.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1145,7 +1163,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio90.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1157,7 +1175,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio91.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1169,7 +1187,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio92.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1181,7 +1199,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio93.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1193,7 +1211,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio94.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1205,7 +1223,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio95.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1217,7 +1235,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio96.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1229,7 +1247,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio97.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1241,7 +1259,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio98.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1253,7 +1271,7 @@
                 .row.align-items-center
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio99.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1285,7 +1303,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio100.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1297,7 +1315,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio101.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1309,7 +1327,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio102.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1322,7 +1340,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio103.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1334,7 +1352,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio104.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1346,7 +1364,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio105.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1358,7 +1376,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio106.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1370,7 +1388,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio107.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1383,7 +1401,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio108.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1395,7 +1413,7 @@
                 .row.align-items-center
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio109.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1427,7 +1445,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio110.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1439,7 +1457,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio111.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1451,7 +1469,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio112.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1463,7 +1481,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio113.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1475,7 +1493,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio114.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1487,7 +1505,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio115.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1499,7 +1517,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio116.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1511,7 +1529,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio117.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1523,7 +1541,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio118.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1535,7 +1553,7 @@
                 .row.align-items-center
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio119.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1567,7 +1585,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio120.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1579,7 +1597,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio121.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1591,7 +1609,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio122.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1603,7 +1621,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio123.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1616,7 +1634,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio124.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1628,7 +1646,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio125.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1640,7 +1658,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio126.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1652,7 +1670,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio127.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1664,7 +1682,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio128.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1677,7 +1695,7 @@
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio129.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1689,7 +1707,7 @@
                 .row.align-items-center
                   .col-2
                     Audio.m-auto.color-primario(
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                      :audio="require('@/assets/curso/tema1/audio130.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
@@ -1703,7 +1721,7 @@
         .row.justify-content-end
           .col-lg-10
             .p-4
-              p.mb-0 #[i.txt-color2 Warning #1]
+              p.mb-0 #[i.txt-color7 #[b Warning #1]]
               p.mb-0 #[b Advertencia #1]
         .row.bg-color20
           .col-lg-2
@@ -1716,7 +1734,7 @@
                   p #[i.txt-color4 In the tables, we only show 52 of the most common irregular verbs, but there are actually around 600 of them. For a complete list of irregular verbs, click on the following link:]
                   p.text-white #[i En las tablas, solo se muestran 52 de los verbos irregulares más comunes, pero en realidad son alrededor de 600. Para consultar una lista completa de los verbos irregulares, haga clic en el siguiente enlace:]
                 .col-auto
-                  a.boton.color-primario.me-3.mb-0.mb-lg-5(:href="obtenerLink('downloads/Anexo1.pdf')" target="_blank" type="application/pdf")
+                  a.boton.color-acento-botones.me-3.mb-0.mb-lg-5(:href="obtenerLink('downloads/Anexo1.pdf')" target="_blank" type="application/pdf")
                     span Descargar
                     i.fas.fa-file-download
     Separador
@@ -1729,137 +1747,257 @@
           img(src='@/assets/curso/tema1/img12.png', style="width: 350px")
       .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion4")
-    .tarjeta.tarjeta--amarilla.p-2.mb-5
+    .tarjeta.tarjeta--amarilla.p-1.mb-5
       SlyderA
-        .row.justify-content-center.mx-2.p-3
+        .row.justify-content-center.mx-1.p-1.p-lg-4
           .col-lg-10
             .row.mb-4
-              .col-auto.mb-4.bg-color11
+              .col-auto.bg-color11
                 .p-3
-                  h3.mb-0.text-white #[i Affirmative structure] / Estructura afirmativa
+                  h3.mb-0 #[i.text-white Affirmative structure] / Estructura afirmativa
               .col-12.bg-white.rounded.p-4.mb-4
-                .row.align-items-center
-                  .col-auto.mb-4.mb-lg-0
+                p #[b Estructura]
+                .row.justify-content-center.align-items-center
+                  .col-10.col-lg.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img14.svg', style="width: 250px").m-auto
-                  .col
-                    p #[b Estructura]
+                      img(src='@/assets/curso/tema1/img27.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img7.png').m-auto
-              .row
-                .col-lg
-                  p.mb-0 #[i.txt-color2 I #[span.txt-color6 lived] in Spain.]
-                  p.mb-4 Yo viví en España.
-                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 Drew] that.]
-                  p.mb-4 Tú dibujaste eso.
-                  p.mb-0 #[i.txt-color2 He #[span.txt-color6 played] football yesterday.]
-                  p.mb-0 Él jugó fútbol ayer.
-                .col-lg
-                  p.mb-0 #[i.txt-color2 She #[span.txt-color6 flew] in a helicopter.]
-                  p.mb-4 Ella voló en un helicóptero.
-                  p.mb-0 #[i.txt-color2 It #[span.txt-color6 barked] really loud.]
-                  p.mb-4 (Eso) Ladró muy fuerte.
-                  p.mb-0 #[i.txt-color2 We #[span.txt-color6 ate] the whole cake.]
-                  p.mb-0 Nosotros nos comimos todo el pastel.
-                .col-lg
-                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 cooked] lasagna last night.]
-                  p.mb-4 Ustedes cocinaron lasaña anoche.
-                  p.mb-0 #[i.txt-color2 They #[span.txt-color6 bought] a house a year ago.]
-                  p.mb-0 Ellos compraron una casa hace un año.
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img29.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg
+                    figure
+                      img(src='@/assets/curso/tema1/img30.svg').m-auto
+              .row.justify-content-center
+                .col-lg-5.mb-4.mb-lg-0.bg-color53
+                  .row.mb-4.mb-lg-0
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 I]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-0 #[i.txt-color1 He]
+                      p.mb-0 #[i.txt-color1 She]
+                      p.mb-4 #[i.txt-color1 It]
+                      p.mb-0 #[i.txt-color1 We]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-4 #[i.txt-color1 They]
+                    .col-auto.bg-color52
+                      p.mb-0.mt-4 #[i.txt-color2 lived]
+                      p.mb-0 #[i.txt-color2 drew]
+                      p.mb-0 #[i.txt-color2 played]
+                      p.mb-0 #[i.txt-color2 flew]
+                      p.mb-4 #[i.txt-color2 barked]
+                      p.mb-0 #[i.txt-color2 ate]
+                      p.mb-0 #[i.txt-color2 cooked]
+                      p.mb-4 #[i.txt-color2 bought]
+                    .col-6
+                      p.mb-0.mt-4 #[i.txt-color1 in Spain.] 
+                      p.mb-0 #[i.txt-color1 that painting.] 
+                      p.mb-0 #[i.txt-color1 football yesterday.] 
+                      p.mb-0 #[i.txt-color1 in a helicopter.] 
+                      p.mb-4 #[i.txt-color1 really loud.] 
+                      p.mb-0 #[i.txt-color1 the whole cake.] 
+                      p.mb-0 #[i.txt-color1 lasagna last night.] 
+                      p.mb-4 #[i.txt-color1 a house a year ago.] 
+                .col-lg-5
+                  .row
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 Yo #[b viví] en España.]
+                      p.mb-0 #[i.txt-color1 Tú #[b dibujaste] esa pintura.]
+                      p.mb-0 #[i.txt-color1 Él #[b jugó] fútbol ayer.]
+                      p.mb-0 #[i.txt-color1 Ella #[b voló] en un helicóptero.]
+                      p.mb-4 #[i.txt-color1 (Eso) #[b Ladró] muy fuerte.]
+                      p.mb-0 #[i.txt-color1 Nosotros nos #[b comimos] todo el pastel.]
+                      p.mb-0 #[i.txt-color1 Ustedes #[b cocinaron] lasaña anoche.]
+                      p.mb-4 #[i.txt-color1 Ellos #[b compraron] una casa hace un año.]
             .row.justify-content-center
               .col-lg-10
                 TarjetaAudio.color-primario(
                     texto=""
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                    :audio="require('@/assets/curso/tema1/audio70.mp3')"
                   )
-        .row.justify-content-center.mx-2.p-3
+        .row.justify-content-center.mx-1.p-1.p-lg-4
           .col-lg-10
             .row.mb-4
-              .col-auto.mb-4.bg-color11
+              .col-auto.bg-color11
                 .p-3
-                  h3.mb-0.text-white #[i Negative structure] / Estructura negativa
+                  h3.mb-0 #[i.text-white Negative structure] / Estructura negativa
               .col-12.bg-white.rounded.p-4.mb-4
-                .row.align-items-center
-                  .col-auto.mb-4.mb-lg-0
+                p #[b Estructura]
+                .row.justify-content-center.align-items-center
+                  .col-10.col-lg.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img14.svg', style="width: 250px").m-auto
-                  .col
-                    p #[b Estructura]
+                      img(src='@/assets/curso/tema1/img31.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img8.png').m-auto
-              .row
-                .col-lg
-                  p.mb-0 #[i.txt-color2 I #[span.txt-color6 didn’t live] in Spain.]
-                  p.mb-4 Yo no viví en España.
-                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 did not] draw that.]
-                  p.mb-4 Tú no dibujaste eso.
-                  p.mb-0 #[i.txt-color2 He #[span.txt-color6 didn’t] play football yesterday.]
-                  p.mb-0 Él no jugó fútbol ayer.
-                .col-lg
-                  p.mb-0 #[i.txt-color2 She #[span.txt-color6 did not] fly in a helicopter.]
-                  p.mb-4 Ella no voló en un helicóptero.
-                  p.mb-0 #[i.txt-color2 It #[span.txt-color6 didn’t] bark that loud.]
-                  p.mb-4 Eso no ladró tan fuerte.
-                  p.mb-0 #[i.txt-color2 We #[span.txt-color6 did not] eat the whole cake.]
-                  p.mb-0 Nosotros no nos comimos todo el pastel.
-                .col-lg
-                  p.mb-0 #[i.txt-color2 You #[span.txt-color6 didn’t] cook lasagna last night.]
-                  p.mb-4 Ustedes no cocinaron lasaña anoche.
-                  p.mb-0 #[i.txt-color2 They #[span.txt-color6 did not] buy a house a year ago.]
-                  p.mb-0 Ellos no compraron una casa hace un año.
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img32.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img33.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg
+                    figure
+                      img(src='@/assets/curso/tema1/img34.svg').m-auto
+              .row.justify-content-center
+                .col-lg-6.mb-4.mb-lg-0.bg-color53
+                  .row.mb-4.mb-lg-0
+                    .col-2
+                      p.mb-0.mt-4 #[i.txt-color1 I]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-0 #[i.txt-color1 He]
+                      p.mb-0 #[i.txt-color1 She]
+                      p.mb-4 #[i.txt-color1 It]
+                      p.mb-0 #[i.txt-color1 We]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-4 #[i.txt-color1 They]
+                    .col-auto.bg-color54
+                      p.mb-0.mt-4 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-4 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-4 #[i.txt-color2 didn’t]
+                    .col-auto.bg-color52
+                      p.mb-0.mt-4 #[i.txt-color2 live]
+                      p.mb-0 #[i.txt-color2 draw]
+                      p.mb-0 #[i.txt-color2 play]
+                      p.mb-0 #[i.txt-color2 fly]
+                      p.mb-4 #[i.txt-color2 bark]
+                      p.mb-0 #[i.txt-color2 eat]
+                      p.mb-0 #[i.txt-color2 cook]
+                      p.mb-4 #[i.txt-color2 buy]
+                    .col
+                      p.mb-0.mt-4 #[i.txt-color1 in Spain.] 
+                      p.mb-0 #[i.txt-color1 that.] 
+                      p.mb-0 #[i.txt-color1 football yesterday.] 
+                      p.mb-0 #[i.txt-color1 in a helicopter.] 
+                      p.mb-4 #[i.txt-color1 that loud.] 
+                      p.mb-0 #[i.txt-color1 the whole cake.] 
+                      p.mb-0 #[i.txt-color1 lasagna last night.] 
+                      p.mb-4 #[i.txt-color1 a house a year ago.] 
+                .col-lg-5
+                  .row
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 Yo #[b no viví] en España.]
+                      p.mb-0 #[i.txt-color1 Tú #[b no dibujaste] eso pintura.]
+                      p.mb-0 #[i.txt-color1 Él #[b no jugó] fútbol ayer.]
+                      p.mb-0 #[i.txt-color1 Ella #[b no voló] en un helicóptero.]
+                      p.mb-4 #[i.txt-color1 (Eso) #[b no Ladró] tan fuerte.]
+                      p.mb-0 #[i.txt-color1 Nosotros #[b no  nos comimos] todo el pastel.]
+                      p.mb-0 #[i.txt-color1 Ustedes #[b no cocinaron] lasaña anoche.]
+                      p.mb-4 #[i.txt-color1 Ellos #[b no compraron] una casa hace un año.]
             .row.justify-content-center
               .col-lg-10
                 TarjetaAudio.color-primario(
                     texto=""
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                    :audio="require('@/assets/curso/tema1/audio71.mp3')"
                   )
-        .row.justify-content-center.mx-2.p-3
+        .row.justify-content-center.mx-1.p-1.p-lg-4
           .col-lg-10
-            .row
-              .col-auto.mb-4.bg-color11
+            .row.mb-4
+              .col-auto.bg-color11
                 .p-3
-                  h3.mb-0.text-white #[i Interrogative structure] / Estructura interrogativa
+                  h3.mb-0 #[i.text-white Interrogative structure] / Estructura interrogativa
               .col-12.bg-white.rounded.p-4.mb-4
-                .row.align-items-center
-                  .col-auto.mb-4.mb-lg-0
+                p #[b Estructura]
+                .row.justify-content-center.align-items-center
+                  .col-10.col-lg.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img14.svg', style="width: 250px").m-auto
-                  .col
-                    p #[b Estructura]
+                      img(src='@/assets/curso/tema1/img35.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
                     figure
-                      img(src='@/assets/curso/tema1/img9.png').m-auto
-              .row
-                .col-lg
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] I live in Spain?]
-                  p.mb-4 ¿Yo viví en España?
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] you draw that?]
-                  p.mb-4 ¿Tú dibujaste eso?
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] he play football yesterday?]
-                  p.mb-0 ¿Él jugó fútbol ayer?
-                .col-lg
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] she fly in a helicopter?]
-                  p.mb-4 ¿Ella voló en un helicóptero?
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] it bark loud?]
-                  p.mb-4 ¿(Eso) Ladró fuerte?
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] we eat the whole cake?]
-                  p.mb-0 ¿Nosotros nos comimos todo el pastel?
-                .col-lg
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] you cook lasagna last night?]
-                  p.mb-4 ¿Ustedes cocinaron lasaña anoche?
-                  p.mb-0 #[i.txt-color2 #[span.txt-color6 Did] they buy a house a year ago?]
-                  p.mb-0 ¿Ellos compraron una casa hace un año?
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img36.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img37.svg').m-auto
+                  .col-lg-auto.mb-2.mb-lg-0
+                    figure
+                      img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+                  .col-10.col-lg
+                    figure
+                      img(src='@/assets/curso/tema1/img38.svg').m-auto
+              .row.justify-content-center
+                .col-lg-6.mb-4.mb-lg-0.bg-color53
+                  .row.mb-4.mb-lg-0
+                    .col-auto.bg-color54
+                      p.mb-0.mt-4 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-4 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-4 #[i.txt-color2 did]
+                    .col-2
+                      p.mb-0.mt-4 #[i.txt-color1 I]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-0 #[i.txt-color1 He]
+                      p.mb-0 #[i.txt-color1 She]
+                      p.mb-4 #[i.txt-color1 It]
+                      p.mb-0 #[i.txt-color1 We]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-4 #[i.txt-color1 They]
+                    .col-auto.bg-color52
+                      p.mb-0.mt-4 #[i.txt-color2 live]
+                      p.mb-0 #[i.txt-color2 draw]
+                      p.mb-0 #[i.txt-color2 play]
+                      p.mb-0 #[i.txt-color2 fly]
+                      p.mb-4 #[i.txt-color2 bark]
+                      p.mb-0 #[i.txt-color2 eat]
+                      p.mb-0 #[i.txt-color2 cook]
+                      p.mb-4 #[i.txt-color2 buy]
+                    .col
+                      p.mb-0.mt-4 #[i.txt-color1 in Spain?] 
+                      p.mb-0 #[i.txt-color1 that?] 
+                      p.mb-0 #[i.txt-color1 football yesterday?]
+                      p.mb-0 #[i.txt-color1 in a helicopter?]
+                      p.mb-4 #[i.txt-color1 loud?]
+                      p.mb-0 #[i.txt-color1 the whole cake?]
+                      p.mb-0 #[i.txt-color1 lasagna last night?]
+                      p.mb-4 #[i.txt-color1 a house a year ago?]
+                .col-lg-5
+                  .row
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 Yo #[b viví] en España?]
+                      p.mb-0 #[i.txt-color1 Tú #[b dibujaste] eso pintura?]
+                      p.mb-0 #[i.txt-color1 Él #[b jugó] fútbol ayer?]
+                      p.mb-0 #[i.txt-color1 Ella #[b voló] en un helicóptero?]
+                      p.mb-4 #[i.txt-color1 (Eso) #[b Ladró] tan fuerte?]
+                      p.mb-0 #[i.txt-color1 Nosotros #[b nos comimos] todo el pastel?]
+                      p.mb-0 #[i.txt-color1 Ustedes #[b cocinaron] lasaña anoche?]
+                      p.mb-4 #[i.txt-color1 Ellos #[b compraron] una casa hace un año?]
             .row.justify-content-center
               .col-lg-10
                 TarjetaAudio.color-primario(
                     texto=""
-                    :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                    :audio="require('@/assets/curso/tema1/audio72.mp3')"
                   )
     .row.mb-5
       .col-12
         .row.justify-content-end
           .col-lg-10
             .p-4
-              p.mb-0 #[i.txt-color2 Warning #2]
+              p.mb-0 #[i.txt-color7 #[b Warning #2]]
               p.mb-0 #[b Advertencia #2]
         .row.bg-color20
           .col-lg-2
@@ -1877,7 +2015,7 @@
         .row.justify-content-end
           .col-lg-10
             .p-4
-              p.mb-0 #[i.txt-color2 Warning #3]
+              p.mb-0 #[i.txt-color7 #[b Warning #3]]
               p.mb-0 #[b Advertencia #3]
         .row.bg-color20
           .col-lg-2
@@ -1899,20 +2037,20 @@
           p.mb-4 #[i For example] / Por ejemplo:
           TarjetaAudio.color-primario.mb-2(
             texto="<em><span>Did I live in Spain?</span></em>"
-            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+            :audio="require('@/assets/curso/tema1/audio73.mp3')"
           )
           p.ms-3.mb-4 ¿Yo viví en España?
           .row
             .col-lg-6.mb-2.mb-lg-0
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>Yes, I did.</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio74.mp3')"
               )
               p.ms-3 Si.
             .col-lg-6
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>No, I didn't.</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio75.mp3')"
               )
               p.ms-3 No.
       .col-lg-5.bg-color14
@@ -1922,20 +2060,20 @@
           p.mb-4 #[i For example] / Por ejemplo:
           TarjetaAudio.color-primario.mb-2(
             texto="<em><span>Did they buy a house a year ago?</span></em>"
-            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+            :audio="require('@/assets/curso/tema1/audio76.mp3')"
           )
           p.ms-3.mb-4 ¿Ellos compraron una casa hace un año?
           .row
             .col-lg-6.mb-2.mb-lg-0
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>Yes, they did.</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio77.mp3')"
               )
               p.ms-3 Si.
             .col-lg-6
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>No, they didn't.</span></em>"
-                :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                :audio="require('@/assets/curso/tema1/audio78.mp3')"
               )
               p.ms-3 No.
 

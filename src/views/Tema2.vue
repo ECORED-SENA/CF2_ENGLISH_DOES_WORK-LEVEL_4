@@ -13,10 +13,15 @@
           img(src='@/assets/curso/tema2/img1.png', style="width: 350px")
       .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion1")
-    p #[i.txt-color3 Below we will see a fairly complete table of interrogative pronouns (interrogative words), in which although they are not all of them, the vast majority are there, including variations of questions with #[b "what"], various types of questions with #[b "how"], and the difference between #[b “who”], #[b “whom”] and #[b “whose”].]
-    p.mb-5 A continuación, veremos una tabla bastante completa de pronombres interrogativos (palabras interrogativas), en la que, si bien no están todos, está la gran mayoría, incluyendo variaciones de preguntas con #[i.txt-color2 “what”], varios tipos de preguntas con #[i.txt-color2 “how”], y la diferencia entre #[i.txt-color2 “who”], #[i.txt-color2 “whom”] y #[i.txt-color2 “whose”]
+    .row.align-items-center.mb-5
+      .col-lg-8.mb-4.mb-lg-0
+        p #[i.txt-color3 Below we will see a fairly complete table of interrogative pronouns (interrogative words), in which although they are not all of them, the vast majority are there, including variations of questions with #[b "what"], various types of questions with #[b "how"], and the difference between #[b “who”], #[b “whom”] and #[b “whose”].]
+        p A continuación, veremos una tabla bastante completa de pronombres interrogativos (palabras interrogativas), en la que, si bien no están todos, está la gran mayoría, incluyendo variaciones de preguntas con #[i.txt-color2 “what”], varios tipos de preguntas con #[i.txt-color2 “how”], y la diferencia entre #[i.txt-color2 “who”], #[i.txt-color2 “whom”] y #[i.txt-color2 “whose”]
+      .col-lg-4
+        figure
+          img(src='@/assets/curso/tema2/img2.png', style="width: 350px").m-auto
     .titulo-sexto.color-acento-contenido
-      p.mb-0 #[b Tabla 4]. #[i.txt-color3 Question word / Function / Example sentence]
+      p.mb-0 #[b Tabla 1]. #[i.txt-color7 Question word / Function / Example sentence]
     #carouselExampleIndicators.carousel.slide(data-bs-ride='carousel' data-bs-interval="false").mb-5
       .carousel-indicators
         button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
@@ -55,7 +60,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>When?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio1.mp3')"
                           )
                           p.ms-3 ¿Cuándo?
                   .col-lg-4
@@ -78,7 +83,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>When did you visit The Eiffel Tower?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio2.mp3')"
                           )
                           p.ms-3 ¿Cuándo visitaste la Torre Eiffel?
         .carousel-item
@@ -96,7 +101,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Where?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio3.mp3')"
                           )
                           p.ms-3 ¿Dónde?
                   .col-lg-4
@@ -119,7 +124,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Where did Albert Einstein die?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio4.mp3')"
                           )
                           p.ms-3 ¿Dónde murió Albert Einstein?
         .carousel-item
@@ -137,7 +142,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Why?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio5.mp3')"
                           )
                           p.ms-3 ¿Por qué?
                   .col-lg-4
@@ -160,7 +165,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Why did the Second World War start?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio6.mp3')"
                           )
                           p.ms-3 ¿Por qué comenzó la Segunda Guerra Mundial?
         .carousel-item
@@ -178,7 +183,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio7.mp3')"
                           )
                           p.ms-3 ¿Qué?
                   .col-lg-4
@@ -201,7 +206,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What did you do on Bonfire Night?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio8.mp3')"
                           )
                           p.ms-3 ¿Qué hiciste en la noche de las hogueras?
         .carousel-item
@@ -219,7 +224,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What time?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio9.mp3')"
                           )
                           p.ms-3 ¿A qué hora?
                   .col-lg-4
@@ -242,7 +247,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What time did John F Kennedy get shot?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio10.mp3')"
                           )
                           p.ms-3 ¿A qué hora le dispararon a John F. Kennedy?
         .carousel-item
@@ -260,7 +265,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What … for?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio11.mp3')"
                           )
                           p.ms-3 ¿Para qué?
                   .col-lg-4
@@ -283,7 +288,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What did William Shakespeare write Hamlet for?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio12.mp3')"
                           )
                           p.ms-3 ¿Para qué escribió William Shakespeare Hamlet?
         .carousel-item
@@ -301,7 +306,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Which?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio13.mp3')"
                           )
                           p.ms-3 ¿Cuál?
                   .col-lg-4
@@ -324,7 +329,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Which countries did Germany occupy?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio14.mp3')"
                           )
                           p.ms-3 ¿Cuáles países ocupó Alemania?
         .carousel-item
@@ -342,7 +347,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Who?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio15.mp3')"
                           )
                           p.ms-3 ¿Quién?
                   .col-lg-4
@@ -365,7 +370,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Who was Robin Hood?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio16.mp3')"
                           )
                           p.ms-3 ¿Quién fue Robin Hood?
         .carousel-item
@@ -383,7 +388,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Whom?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio17.mp3')"
                           )
                           p.ms-3 ¿A quién?
                   .col-lg-4
@@ -406,7 +411,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Whom did you see on the anniversary of 9/11?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio18.mp3')"
                           )
                           p.ms-3 ¿A quién viste en el aniversario del 11 de septiembre?
         .carousel-item
@@ -424,7 +429,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Whose?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio19.mp3')"
                           )
                           p.ms-3 ¿De quién?
                   .col-lg-4
@@ -447,7 +452,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>Whose camera did you use to take that photo of Queen Elizabeth?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio20.mp3')"
                           )
                           p.ms-3 ¿De quién era la cámara que usaste para tomar esa foto de la reina Isabel?
         .carousel-item
@@ -465,7 +470,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio21.mp3')"
                           )
                           p.ms-3 ¿Cómo?
                   .col-lg-4
@@ -488,7 +493,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How did you learn about D-Day?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio22.mp3')"
                           )
                           p.ms-3 ¿Cómo te enteraste del desembarco de Normandía?
         .carousel-item
@@ -506,7 +511,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How long?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio23.mp3')"
                           )
                           p.ms-3 ¿Cuán largo? *
                   .col-lg-4
@@ -529,7 +534,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How long was the Tacoma Narrows Bridge?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio24.mp3')"
                           )
                           p.ms-3 ¿Cuán largo era el puente de Tacoma Narrows?
         .carousel-item
@@ -547,7 +552,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How long?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio25.mp3')"
                           )
                           p.ms-3 ¿Cuánto tiempo? **
                   .col-lg-4
@@ -570,7 +575,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How long did The Great Depression last?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio26.mp3')"
                           )
                           p.ms-3 ¿Cuánto duró la Gran Depresión?
         .carousel-item
@@ -588,7 +593,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How wide?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio27.mp3')"
                           )
                           p.ms-3 ¿Cuán ancho?
                   .col-lg-4
@@ -611,7 +616,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How wide was the Berlin Wall?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio28.mp3')"
                           )
                           p.ms-3 ¿Cuán ancho era el Muro de Berlín?
         .carousel-item
@@ -629,7 +634,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How old?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio29.mp3')"
                           )
                           p.ms-3 ¿Cuántos años?
                   .col-lg-4
@@ -652,7 +657,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How old was King Arthur when he took the sword out of the rock?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio30.mp3')"
                           )
                           p.ms-3 ¿Cuántos años tenía el rey Arturo cuando sacó la espada de la roca?
         .carousel-item
@@ -670,7 +675,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How much?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio31.mp3')"
                           )
                           p.ms-3 ¿Cuánto cuesta? *
                   .col-lg-4
@@ -693,7 +698,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How much did it cost to build the Eiffel Tower?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio32.mp3')"
                           )
                           p.ms-3 ¿Cuánto costó construir la Torre Eiffel?
         .carousel-item
@@ -711,7 +716,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How much?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio33.mp3')"
                           )
                           p.ms-3 ¿Cuánto? ¿Cuánta? **
                   .col-lg-4
@@ -734,7 +739,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How much snow fell in Boston in the winter of 1978?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio34.mp3')"
                           )
                           p.ms-3 ¿Cuánta nieve cayó en Boston en el invierno de 1978?
         .carousel-item
@@ -752,7 +757,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How many?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio35.mp3')"
                           )
                           p.ms-3 ¿Cuántos? ¿Cuántas?
                   .col-lg-4
@@ -775,7 +780,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How many engineers did companies hire during Y2K?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio36.mp3')"
                           )
                           p.ms-3 ¿Cuántos ingenieros contrataron las empresas durante el problema informático del año 2000?
         .carousel-item
@@ -793,7 +798,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How far?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio37.mp3')"
                           )
                           p.ms-3 ¿Cuán lejos?
                   .col-lg-4
@@ -816,7 +821,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How far did people travel to go to a World's Fair in the last century?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio38.mp3')"
                           )
                           p.ms-3 ¿Cuán lejos viajaba la gente para ir a una Feria Mundial en el siglo pasado?
         .carousel-item
@@ -834,7 +839,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How come?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio39.mp3')"
                           )
                           p.ms-3 ¿Cómo es que…?
                   .col-lg-4
@@ -857,7 +862,7 @@
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>How come people believe in BigFoot?</span></em>"
-                            :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
+                            :audio="require('@/assets/curso/tema2/audio40.mp3')"
                           )
                           p.ms-3 ¿Cómo es que la gente cree en Pie Grande?
       button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
@@ -875,7 +880,7 @@
         .row.justify-content-end
           .col-lg-10
             .p-4
-              p.mb-0 #[i.txt-color2 Warning #4]
+              p.mb-0 #[i.txt-color7 #[b Warning #4]]
               p.mb-0 #[b Advertencia #4]
         .row.bg-color20
           .col-lg-2
@@ -884,114 +889,112 @@
           .col-lg-10
             .p-4
               p #[i.txt-color4 The form “whom” is used to ask for the object of a verb or of a preposition in very formal or old-fashioned English. “Whom” is not very common, modern English usage prefers “who” instead of “whom” in all but the most formal contexts, especially in formal writing.]
-              p.txt-color5 La forma #[b #[i.txt-color4 “whom”]] se usa para preguntar por el objeto de un verbo o de una preposición en un inglés muy formal o anticuado. #[b #[i.txt-color4 “Whom”]] no es muy común, el uso del inglés moderno prefiere #[b #[i.txt-color4 “who”]] en lugar de #[b #[i.txt-color4 “whom”]] en todos los contextos, excepto en los más formales, especialmente en la escritura formal.
+              p.txt-color5 La forma #[b #[i “whom”]] se usa para preguntar por el objeto de un verbo o de una preposición en un inglés muy formal o anticuado. #[b #[i “Whom”]] no es muy común, el uso del inglés moderno prefiere #[b #[i “who”]] en lugar de #[b #[i “whom”]] en todos los contextos, excepto en los más formales, especialmente en la escritura formal.
     .row.mb-5
-      .col-12
+      .col-lg-5.mb-4.mb-lg-0
+        figure
+          img(src='@/assets/curso/tema2/img3.png', style="width: 450px").m-auto
+      .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion2")
     .row
       .col-12.bg-color21
-        .p-3
-          h3.text-center #[i.txt-color3 Information Questions] / Preguntas de información
-          .row.mb-3
-            .col-lg.bg-color22.m-1
-              .p-3
-                p.mb-0.text-center.text-white #[b #[i WH- word]]
-                p #[b Palabra con “WH”]
-                .row
-                  .col-12.bg-color23
-                    .p-4
-                      p.mb-0.text-center #[b #[i When]]
-                      p.mb-0.text-center #[b #[i What time]]
-                      p.mb-0.text-center #[b #[i How old]]
-            .col-lg.bg-color22.m-1
-              .p-3
-                p.mb-0.text-center.text-white #[b #[i Auxiliary]]
-                p #[b Auxiliar]
-                .row
-                  .col-12.bg-color23
-                    .p-4
-                      p.mb-0.text-center #[b #[i Did]]
-            .col-lg.bg-color22.m-1
-              .p-3
-                p.mb-0.text-center.text-white #[b #[i Subject]]
-                p #[b Sujeto]
-                .row
-                  .col-12.bg-color23
-                    .p-4
-                      p.mb-0.text-center #[b #[i I / he / she / it]]
-                      p.mb-0.text-center #[b #[i we / you / they]]
-            .col-lg.bg-color22.m-1
-              .p-3
-                p.mb-0.text-center.text-white #[b #[i Verb]]
-                p #[b Verbo]
-                .row
-                  .col-12.bg-color23
-                    .p-4
-                      p.mb-0.text-center #[b #[i verb in base form]]
-                      p.mb-0.text-center #[b #[i verbo en forma base]]
-            .col-lg.bg-color22.m-1
-              .p-3
-                p.mb-0.text-center.text-white #[b #[i Complement]]
-                p #[b Complemento]
-                .row
-                  .col-12.bg-color23
-                    .p-4
-                      p.mb-0.text-center #[b #[i …more information]]
-                      p.mb-0.text-center #[b #[i …más información]]
-          .row
-            .col-12.bg-color24
-              .p-3
-                .row
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>When did I live in Spain?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Cuándo viví en España?
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>What did you draw?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Qué dibujaste tú?
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>Why did he play football yesterday?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Por qué él jugó al fútbol ayer?
-                .row
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>How far did she fly in a helicopter?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Cuán lejos voló ella en un helicóptero?
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>How did it bark so loud?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Cómo (eso) ladró tan fuerte?
-                  .col-lg-4
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>How come did we eat the whole cake?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Cómo es que nos comimos todo el pastel?
-                .row.justify-content-center
-                  .col-lg-5
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>What time did you cook lasagna last night?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿A qué hora ustedes cocinaron lasaña anoche?
-                  .col-lg-5
-                    TarjetaAudio.color-primario.mb-2(
-                      texto="<em><span>Where did they buy a house a year ago?</span></em>"
-                      :audio="require('@/assets/componentes/audios/audio-ej.mp3')"
-                    )
-                    p.ms-3 ¿Dónde compraron ellos una casa hace un año?
+        .p-4
+          h3.text-center.mb-5 #[i.txt-color3 Information Questions] / Preguntas de información
+          .row.justify-content-center.align-items-center.mb-5
+            .col-10.col-lg.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema2/img1.svg').m-auto
+            .col-lg-auto.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+            .col-10.col-lg.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema2/img2.svg').m-auto
+            .col-lg-auto.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+            .col-10.col-lg.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema2/img3.svg').m-auto
+            .col-lg-auto.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+            .col-10.col-lg.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema2/img4.svg').m-auto
+            .col-lg-auto.mb-2.mb-lg-0
+              figure
+                img(src='@/assets/curso/tema1/img28.svg', style="width: 10px").m-auto
+            .col-10.col-lg
+              figure
+                img(src='@/assets/curso/tema2/img5.svg').m-auto
+          .row.justify-content-center.mb-4
+            .col-12.bg-color22.p-4
+              .row.justify-content-center
+                .col-lg-6.mb-4.mb-lg-0.bg-color53
+                  .row.mb-4.mb-lg-0
+                    .col-auto.bg-color55.me-2
+                      p.mb-0.mt-4 #[i.txt-color2 When]
+                      p.mb-0 #[i.txt-color2 What]
+                      p.mb-0 #[i.txt-color2 Why]
+                      p.mb-0 #[i.txt-color2 How far]
+                      p.mb-4 #[i.txt-color2 How]
+                      p.mb-0 #[i.txt-color2 How come]
+                      p.mb-0 #[i.txt-color2 What time]
+                      p.mb-4 #[i.txt-color2 Where]
+                    .col-auto.bg-color54
+                      p.mb-0.mt-4 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-4 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-0 #[i.txt-color2 did]
+                      p.mb-4 #[i.txt-color2 did]
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 I]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-0 #[i.txt-color1 He]
+                      p.mb-0 #[i.txt-color1 She]
+                      p.mb-4 #[i.txt-color1 It]
+                      p.mb-0 #[i.txt-color1 We]
+                      p.mb-0 #[i.txt-color1 You]
+                      p.mb-4 #[i.txt-color1 They]
+                    .col-auto.bg-color52
+                      p.mb-0.mt-4 #[i.txt-color2 live]
+                      p.mb-0 #[i.txt-color2 draw]
+                      p.mb-0 #[i.txt-color2 play]
+                      p.mb-0 #[i.txt-color2 fly]
+                      p.mb-4 #[i.txt-color2 bark]
+                      p.mb-0 #[i.txt-color2 eat]
+                      p.mb-0 #[i.txt-color2 cook]
+                      p.mb-4 #[i.txt-color2 buy]
+                    .col
+                      p.mb-0.mt-4 #[i.txt-color1 in Spain?] 
+                      p.mb-0 #[i.txt-color1 ?] 
+                      p.mb-0 #[i.txt-color1 football yesterday?]
+                      p.mb-0 #[i.txt-color1 in a helicopter?]
+                      p.mb-4 #[i.txt-color1 so loud?]
+                      p.mb-0 #[i.txt-color1 the whole cake?]
+                      p.mb-0 #[i.txt-color1 lasagna last night?]
+                      p.mb-4 #[i.txt-color1 a house a year ago?]
+                .col-lg-5
+                  .row
+                    .col-auto
+                      p.mb-0.mt-4 #[i.txt-color1 ¿Cuando #[b viví] en España?]
+                      p.mb-0 #[i.txt-color1 ¿Qué #[b dibujaste] tú?]
+                      p.mb-0 #[i.txt-color1 ¿Por qué él #[b jugó] al fútbol ayer?]
+                      p.mb-0 #[i.txt-color1 ¿Cuán lejos #[b voló] ella en un helicóptero?]
+                      p.mb-4 #[i.txt-color1 ¿Cómo (eso) #[b ladró] tan fuerte?]
+                      p.mb-0 #[i.txt-color1 ¿Cómo es que nos #[b comimos] todo el pastel?]
+                      p.mb-0 #[i.txt-color1 ¿A qué hora ustedes #[b cocinaron] lasaña anoche?]
+                      p.mb-4 #[i.txt-color1 ¿Dónde #[b compraron] ellos una casa hace un año?]
+          .row.justify-content-center
+            .col-lg-10
+              TarjetaAudio.color-primario(
+                  texto=""
+                  :audio="require('@/assets/curso/tema2/audio41.mp3')"
+                  )
 
 </template>
 
