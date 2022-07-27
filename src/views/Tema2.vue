@@ -3,17 +3,17 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
       h1 #[i WH- questions in the past tense] (Preguntas con WH- en pasado)
-    .row.justify-content-end.mb-4
+    .row.justify-content-end.mb-4(data-aos="fade-right")
       .col-lg-4.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema2/img1.png', style="width: 350px")
       .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion1")
-    .row.align-items-center.mb-5
+    .row.align-items-center.mb-5(data-aos="fade-left")
       .col-lg-8.mb-4.mb-lg-0
         p #[i.txt-color3 Below we will see a fairly complete table of interrogative pronouns (interrogative words), in which although they are not all of them, the vast majority are there, including variations of questions with #[b "what"], various types of questions with #[b "how"], and the difference between #[b “who”], #[b “whom”] and #[b “whose”].]
         p A continuación, veremos una tabla bastante completa de pronombres interrogativos (palabras interrogativas), en la que, si bien no están todos, está la gran mayoría, incluyendo variaciones de preguntas con #[i.txt-color2 “what”], varios tipos de preguntas con #[i.txt-color2 “how”], y la diferencia entre #[i.txt-color2 “who”], #[i.txt-color2 “whom”] y #[i.txt-color2 “whose”]
@@ -872,10 +872,10 @@
         span.carousel-control-next-icon(aria-hidden='true')
         span.visually-hidden Next
     p.mb-5 Se invita a ver el siguiente video, donde se utilizan expresiones  del pasado simple y algunas preguntas con #[i.txt-color2 “wh- questions”].
-    figure.mb-5
+    figure.mb-5(data-aos="fade-left")
       .video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/IBLKkW632nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-    .row.mb-5
+    .row.bg-color58.mb-5(data-aos="fade-up")
       .col-12
         .row.justify-content-end
           .col-lg-10
@@ -885,18 +885,18 @@
         .row.bg-color20
           .col-lg-2
             figure.fig-position
-              img(src='@/assets/curso/tema1/img12.svg', style="width: 100px").m-auto
+              img(src='@/assets/curso/tema1/img12.svg', style="width: 150px").m-auto
           .col-lg-10
             .p-4
               p #[i.txt-color4 The form “whom” is used to ask for the object of a verb or of a preposition in very formal or old-fashioned English. “Whom” is not very common, modern English usage prefers “who” instead of “whom” in all but the most formal contexts, especially in formal writing.]
               p.txt-color5 La forma #[b #[i “whom”]] se usa para preguntar por el objeto de un verbo o de una preposición en un inglés muy formal o anticuado. #[b #[i “Whom”]] no es muy común, el uso del inglés moderno prefiere #[b #[i “who”]] en lugar de #[b #[i “whom”]] en todos los contextos, excepto en los más formales, especialmente en la escritura formal.
-    .row.mb-5
+    .row.mb-5(data-aos="fade-right")
       .col-lg-5.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema2/img3.png', style="width: 450px").m-auto
       .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion2")
-    .row
+    .row.mb-5(data-aos="fade-left")
       .col-12.bg-color21
         .p-4
           h3.text-center.mb-5 #[i.txt-color3 Information Questions] / Preguntas de información
@@ -995,15 +995,31 @@
                   texto=""
                   :audio="require('@/assets/curso/tema2/audio41.mp3')"
                   )
+    p.mb-5 A continuación, escuche el siguiente diálogo, en el cual se aplica lo estudiado en el tema.
+    .row.align-items-end.bg-color60(data-aos="fade-right")
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema2/img6.png')
+      .col-lg-6
+        DialogoChat(:dialogo="dialogoChat")
+        TarjetaAudio.color-primario.mb-4(
+          texto="<em><span></span></em>"
+          :audio="require('@/assets/curso/tema3/audio24.mp3')"
+        )
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema2/img7.png', style="width: 270px")
 
 </template>
 
 <script>
+import DialogoChat from '../components/DialogoChat.vue'
 import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema2',
   components: {
     Traduccion,
+    DialogoChat,
   },
   data: () => ({
     traduccion1: {
@@ -1023,6 +1039,52 @@ export default {
             'Previously, we saw how to form interrogative sentences for closed questions (“yes or no questions”), now we will see how to form open questions (information questions) with interrogative pronouns “Wh-”.',
           textoEsp:
             'Previamente, vimos cómo formar frases interrogativas para preguntas cerradas (“preguntas de sí o no”), ahora veremos cómo formar preguntas abiertas (preguntas de información) con pronombres interrogativos “Wh-”.',
+        },
+      ],
+    },
+    dialogoChat: {
+      personajes: [
+        {
+          nombre: 'Juan',
+          img: require('@/assets/curso/tema2/img4.png'),
+        },
+        {
+          nombre: 'Ana',
+          img: require('@/assets/curso/tema2/img5.png'),
+        },
+      ],
+      dialogo: [
+        {
+          personaje: 'Juan',
+          textoIng: 'Ana, where did you grow up?',
+        },
+        {
+          personaje: 'Ana',
+          textoIng: 'I was born in Barranquilla, but I grew up in Bogota.',
+        },
+        {
+          personaje: 'Juan',
+          textoIng: 'That is so interesting.',
+        },
+        {
+          personaje: 'Ana',
+          textoIng: 'Yes, it is. What about you, Juan?',
+        },
+        {
+          personaje: 'Juan',
+          textoIng: 'I was born in Bogota, but I grew up in Medellin.',
+        },
+        {
+          personaje: 'Ana',
+          textoIng: 'And which city did you enjoy the most?',
+        },
+        {
+          personaje: 'Juan',
+          textoIng: 'I´m not sure. I liked them both.',
+        },
+        {
+          personaje: 'Ana',
+          textoIng: 'I totally understand you.',
         },
       ],
     },

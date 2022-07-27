@@ -3,11 +3,11 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 3
       h1 #[i Let's talk about history] (Hablemos de historia)
-    .row.justify-content-end
+    .row.justify-content-end(data-aos="fade-right")
       .col-lg-4.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema3/img23.png', style="width: 350px")
@@ -17,76 +17,76 @@
     #t_3_1
     .titulo-segundo.color-acento-botones
       h2 3.1 #[i Famous legends and people in history] (Leyendas y personajes famosos de la historia)
-    .row.mb-4
+    .row.mb-4(data-aos="fade-left")
       .col-12
         Traduccion.color-primario(:dialogo="traduccion2")
-    .row.mb-5
+    .row.mb-5(data-aos="fade-right")
       .col-12
         .row.justify-content-center
           .col-9.col-lg.bg-color25
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio1.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 John F Kennedy]]
+                p.text-center.mb-0 #[b #[i.txt-color7 John F Kennedy]]
                 p.text-center Presidente de Estados Unidos que fue asesinado
           .col-9.col-lg.bg-color27
             .row.justify-content-center.align-items-end
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio2.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 King Arthur]]
+                p.text-center.mb-0 #[b #[i.txt-color7 King Arthur]]
                 p.text-center El Rey Arturo
           .col-9.col-lg.bg-color28
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio3.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Robin Hood]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Robin Hood]]
                 p.text-center Robin Hood
           .col-9.col-lg.bg-color29
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio4.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The Fountain of Youth]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The Fountain of Youth]]
                 p.text-center La fuente de la eterna juventud
           .col-9.col-lg.bg-color30
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio5.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Big Foot or Sasquatch]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Big Foot or Sasquatch]]
                 p.text-center Pie Grande
         .row.justify-content-center
           .col-9.col-lg.bg-color31
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio6.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The Legend of Sleepy Hollow]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The Legend of Sleepy Hollow]]
                 p.text-center La leyenda del jinete sin cabeza
           .col-9.col-lg.bg-color32
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio7.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Albert Einstein]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Albert Einstein]]
                 p.text-center Físico famoso creador de la teoría de la relatividad
           .col-9.col-lg.bg-color33
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio8.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The Boogeyman]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The Boogeyman]]
                 p.text-center El coco
           .col-9.col-lg.bg-color34
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio9.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Queen Elizabeth]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Queen Elizabeth]]
                 p.text-center La Reina Isabel
           .col-9.col-lg.bg-color35
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio10.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 William Shakespeare]]
+                p.text-center.mb-0 #[b #[i.txt-color7 William Shakespeare]]
                 p.text-center Famoso escritor inglés
     p.mb-5 Teniendo en cuenta algunos de los personajes anteriores, se invita a escuchar algunos ejemplos con su correspondiente pronunciación :
-    .row
-      .col-12.bg-color17
+    .row(data-aos="fade-up")
+      .col-12.bg-color59
         .p-4
           .row.justify-content-center
             .col-lg-11.mb-5
@@ -156,89 +156,89 @@
     #t_3_2
     .titulo-segundo.color-acento-botones
       h2 3.2 #[i Important monuments and historical events] (Monumentos y eventos históricos importantes)
-    .row.mb-4
+    .row.mb-4(data-aos="fade-right")
       .col-12
         Traduccion.color-primario(:dialogo="traduccion3")
-    .row.mb-5
+    .row.mb-5(data-aos="fade-left")
       .col-12
         .row.justify-content-center
           .col-9.col-lg.bg-color36
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio12.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 World War]]
+                p.text-center.mb-0 #[b #[i.txt-color7 World War]]
                 p.text-center Guerra Mundial
           .col-9.col-lg.bg-color37
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio13.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 D-Day]]
+                p.text-center.mb-0 #[b #[i.txt-color7 D-Day]]
                 p.text-center El día D, el día del desembarco de Normandía
           .col-9.col-lg.bg-color38
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio14.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Y2K]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Y2K]]
                 p.text-center El efecto 2000, error del milenio, problema informático del año 2000
           .col-9.col-lg.bg-color39
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio15.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Migration]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Migration]]
                 p.text-center Migración
         .row.justify-content-center
           .col-9.col-lg.bg-color40
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio16.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 September 11 or 9/11]]
+                p.text-center.mb-0 #[b #[i.txt-color7 September 11 or 9/11]]
                 p.text-center Ataque terrorista a las torres gemelas
           .col-9.col-lg.bg-color41
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio17.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Bonfire Night]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Bonfire Night]]
                 p.text-center La noche de las hogueras, la noche de los fuegos artificiales en Gran Bretaña
           .col-9.col-lg.bg-color42
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio18.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Fall of Berlin Wall]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Fall of Berlin Wall]]
                 p.text-center Caída del Muro de Berlín
           .col-9.col-lg.bg-color43
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio19.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 Moon Landing]]
+                p.text-center.mb-0 #[b #[i.txt-color7 Moon Landing]]
                 p.text-center Llegada a la luna
         .row.justify-content-center
           .col-9.col-lg.bg-color44
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio20.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The potato famine]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The potato famine]]
                 p.text-center La gran hambruna irlandesa
           .col-9.col-lg.bg-color45
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio21.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The Great Depression]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The Great Depression]]
                 p.text-center La Gran Depresión
           .col-9.col-lg.bg-color46
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio22.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 The Eiffel Tower]]
+                p.text-center.mb-0 #[b #[i.txt-color7 The Eiffel Tower]]
                 p.text-center La Torre Eiffel
           .col-9.col-lg.bg-color47
             .row.justify-content-center
               .col-9.col-lg-10.bg-color26.shadow-sm.p-3
                 Audio.color-primario.mx-auto.mb-4(:audio="require('@/assets/curso/tema3/audio23.mp3')")
-                p.text-center.mb-0 #[b #[i.txt-color2 World's Fair or Universal Exhibition]]
+                p.text-center.mb-0 #[b #[i.txt-color7 World's Fair or Universal Exhibition]]
                 p.text-center Exposición Universal
     p.mb-5 A continuación, se invita escuchar los siguientes ejemplos con su correspondiente pronunciación:
-    .row
-      .col-12.bg-color17
+    .row.mb-5(data-aos="fade-right")
+      .col-12.bg-color59
         .p-4
           .row.justify-content-center
             .col-lg-11.mb-5
@@ -315,15 +315,31 @@
                 texto="<em><span></span></em>"
                 :audio="require('@/assets/curso/tema3/audio24.mp3')"
               )
+    p.mb-5 A continuación, escuche el siguiente diálogo, en el cual se aplica lo estudiado en el tema.
+    .row.align-items-end.bg-color57(data-aos="fade-left")
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema3/img26.png')
+      .col-lg-6
+        DialogoChat(:dialogo="dialogoChat")
+        TarjetaAudio.color-primario.mb-4(
+          texto="<em><span></span></em>"
+          :audio="require('@/assets/curso/tema3/audio24.mp3')"
+        )
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema3/img27.png')
 
 </template>
 
 <script>
+import DialogoChat from '../components/DialogoChat.vue'
 import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema3',
   components: {
     Traduccion,
+    DialogoChat,
   },
   data: () => ({
     traduccion1: {
@@ -353,6 +369,45 @@ export default {
             'Thanks to past simple, we are able to talk about stories of our life and events that we have lived. So, it is important to have the necessary vocabulary in order to talk about history. There are some specific words in historical contexts.',
           textoEsp:
             'Gracias al pasado simple, podemos hablar de historias de nuestras vidas y eventos que hemos vivido. Por lo tanto, es importante tener el vocabulario necesario para hablar de historia. Hay algunas palabras específicas en contextos históricos.',
+        },
+      ],
+    },
+    dialogoChat: {
+      personajes: [
+        {
+          nombre: 'Maria',
+          img: require('@/assets/curso/tema3/img24.png'),
+        },
+        {
+          nombre: 'Carlos',
+          img: require('@/assets/curso/tema3/img25.png'),
+        },
+      ],
+      dialogo: [
+        {
+          personaje: 'Maria',
+          textoIng: 'What did you learn when you were in college?',
+        },
+        {
+          personaje: 'Carlos',
+          textoIng: 'In college I read a lot about German history.',
+        },
+        {
+          personaje: 'Maria',
+          textoIng: 'Really? Was there a specific topic you preferred?',
+        },
+        {
+          personaje: 'Carlos',
+          textoIng:
+            '"World War II" and "The Fall of the Berlin Wall" were my favorites.',
+        },
+        {
+          personaje: 'Maria',
+          textoIng: 'I read about them too, but I like British history better.',
+        },
+        {
+          personaje: 'Carlos',
+          textoIng: 'British history is also fascinating',
         },
       ],
     },

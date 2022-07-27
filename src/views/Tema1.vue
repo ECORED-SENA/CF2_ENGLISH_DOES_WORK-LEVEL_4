@@ -3,11 +3,11 @@
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-2.p-md-5
 
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 1
       h1 #[i Past simple] (Pasado simple)
-    .row
+    .row(data-aos="fade-right")
       .col-lg-4.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema1/img13.png', style="width: 350px").m-auto
@@ -17,7 +17,7 @@
     #t_1_1
     .titulo-segundo.color-acento-botones
       h2 1.1 #[i Regular verbs] (Verbos regulares)
-    .row.mb-5
+    .row.mb-5(data-aos="fade-left")
       .col-lg-7.mb-4.mb-lg-0
         p.txt-color3 #[i In the past simple tense, it is easy to conjugate regular verbs since the formula is easy: base form of the verb + ed. But there are certain rules of spelling and pronunciation that must be followed in certain cases.] 
         p En el tiempo pasado simple es fácil conjugar los verbos regulares, ya que la fórmula es fácil: forma base del #[i.txt-color2 verbo + ed]. Pero hay ciertas reglas de ortografía y pronunciación que se deben seguir en ciertos casos.
@@ -25,14 +25,14 @@
         figure
           img(src='@/assets/curso/tema1/img14.png', style="width: 450px").m-auto
     h3.mb-5 #[i.txt-color3 Spelling rules for words with -ed] / Reglas de ortografía de palabras con #[i.txt-color3 “-ed”]
-    .row
+    .row(data-aos="fade-right")
       .col-lg-5.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema1/img15.png', style="width: 450px").m-auto
       .col-lg-7
         p #[i.txt-color3 To begin with, we must know that in English the words ending with “-ed” can have other uses than being verbs in the simple past tense, they can also be used as past participles in the perfect tenses or as adjectives to qualify or describe something.]
         p.mb-5 Para comenzar, debemos saber que en inglés las palabras terminadas con #[i.txt-color2 “-ed”] pueden tener otros usos diferentes a ser verbos en tiempo pasado simple, pueden usarse también como participios pasados en los tiempos perfectos o como adjetivos para calificar o describir algo. A continuación, podemos ver algunos ejemplos.
-    .row.justify-content-center.mb-5
+    .row.justify-content-center.mb-5(data-aos="fade-up")
       .col-11.col-lg.mb-4.mb-lg-0
         .tarjeta-avatar
           .bg-fig1
@@ -50,8 +50,8 @@
                       :audio="require('@/assets/curso/tema1/audio39.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-              p.text-center.mt-4.mb-0 #[b #[i.txt-color3 Past tense verbs]]
-              p.text-center.mb-4 #[b Verbos en tiempo pasado]
+              h3.text-center.mt-4.mb-0 #[b #[i.txt-color3 Past tense verbs]]
+              h3.text-center.mb-4 #[b Verbos en tiempo pasado]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Counted</em>"
                 :audio="require('@/assets/curso/tema1/audio30.mp3')"
@@ -84,8 +84,8 @@
                       :audio="require('@/assets/curso/tema1/audio40.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-              p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Past participles]]
-              p.text-center.mb-4 #[b Participios pasados]
+              h3.text-center.mt-4.mb-0 #[b #[i Past participles]]
+              h3.text-center.mb-4 #[b Participios pasados]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Needed</em>"
                 :audio="require('@/assets/curso/tema1/audio33.mp3')"
@@ -118,8 +118,8 @@
                       :audio="require('@/assets/curso/tema1/audio41.mp3')"
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
-              p.text-center.text-white.mt-4.mb-0 #[b #[i.txt-color3 Adjectives]]
-              p.text-center.mb-4 #[b Adjetivos]
+              h3.text-center.mt-4.mb-0 #[b #[i Adjectives]]
+              h3.text-center.mb-4 #[b Adjetivos]
               TarjetaAudio.color-primario.mb-3(
                 texto="<em>Concentrated</em>"
                 :audio="require('@/assets/curso/tema1/audio36.mp3')"
@@ -136,7 +136,7 @@
                 no-barra
               )
     p.mb-5 En el siguiente recurso, podemos observar algunos ejemplos utilizando palabras en tiempo pasado con la terminación ed.
-    .row.mb-5
+    .row.mb-5(data-aos="fade-right")
       .col-12.col-lg
         .p-2
           .row.bg-color1
@@ -144,9 +144,9 @@
               figure
                 img(src='@/assets/curso/tema1/img1.png')
             .col-12.bg-color3
-              .p-3
-                p.text-center.mb-0 #[b #[i.txt-color3 Past tense verbs]]
-                p.text-center.mb-5 #[b Verbos en tiempo pasado]
+              .py-3
+                h4.text-center.mb-0 #[b #[i.txt-color3 Past tense verbs]]
+                h4.text-center.mb-5 #[b Verbos en tiempo pasado]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>I counted the coins in the piggy bank.</span></em>"
                   :audio="require('@/assets/curso/tema1/audio1.mp3')"
@@ -159,9 +159,9 @@
               figure
                 img(src='@/assets/curso/tema1/img2.png')
             .col-12.bg-color3
-              .p-3
-                p.text-center.mb-0 #[b #[i.txt-color3 Past participle in the present perfect time]]
-                p.text-center.mb-5 #[b Participio pasado en tiempo presente perfecto]
+              .py-3
+                h4.text-center.mb-0 #[b #[i.txt-color3 Past participle in the present perfect time]]
+                h4.text-center.mb-5 #[b Participio pasado en tiempo presente perfecto]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>We have never needed help with our homework.</span></em>"
                   :audio="require('@/assets/curso/tema1/audio2.mp3')"
@@ -174,22 +174,22 @@
               figure
                 img(src='@/assets/curso/tema1/img3.png')
             .col-12.bg-color3
-              .p-3
-                p.text-center.mb-0 #[b #[i.txt-color3 Adjective describing a person]]
-                p.text-center.mb-5 #[b Adjetivo describiendo a una persona]
+              .py-3
+                h4.text-center.mb-0 #[b #[i.txt-color3 Adjective describing a person]]
+                h4.text-center.mb-5 #[b Adjetivo describiendo a una persona]
                 TarjetaAudio.color-primario.mb-3(
                   texto="<em><span>She was alarmed and astonished.</span></em>"
                   :audio="require('@/assets/curso/tema1/audio3.mp3')"
                 )
                 p.ms-3 Ella estaba #[b alarmada] y #[b estupefacta].
-    .row.mb-5
+    .row.mb-5(data-aos="fade-left")
       .col-lg-4.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema1/img16.png', style="width: 450px").m-auto
       .col-lg-8
         p #[i.txt-color3 We are going to learn the correct spelling of words that end in “-ed” and we will mainly use regular past tense verbs as examples, although the same rules apply to all words that end in “-ed”.]
         p Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[i.txt-color2 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[i.txt-color2 “-ed”].
-    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")(data-aos="fade-right")
       .row(titulo="<span>General Rule</span> / Regla general")
         .col-lg-4.mb-4.mb-lg-0
           figure
@@ -630,16 +630,16 @@
                   .col-auto
                     Audio.color-primario(:audio="require('@/assets/curso/tema1/audio68.mp3')")
     p.mb-5 Después de haber estudiado la ortografía de las palabras con la terminación #[i.txt-color2 -ed], en este apartado estudiaremos las #[i.txt-color2 “Pronunciation rules for words with -ed”] / Reglas de pronunciación de palabras con #[i.txt-color2 “-ed”].
-    .row.mb-5
+    .row.mb-5(data-aos="fade-left")
       .col-12.bg-color4
         .p-4
-          .row
-            .col-lg-3.mb-4.mb-lg-0
+          .row.justify-content-center
+            .col-6.col-lg-3.mb-4.mb-lg-0
               figure
-                img(src='@/assets/curso/tema1/img6.svg', style="width: 350px").m-auto
+                img(src='@/assets/curso/tema1/img6.svg', style="width: 25.col-40px").m-auto
             .col-lg-9
-              p.mb-0 #[i.txt-color2 Pronunciation rules for words with -ed]
-              p.mb-4 #[b Reglas de pronunciación de palabras con “-ed”]
+              h4.mb-0 #[i.txt-color2 Pronunciation rules for words with -ed]
+              h4.mb-4 #[b Reglas de pronunciación de palabras con “-ed”]
               .row.mb-4
                 .col-12.bg-white
                   .p-4
@@ -685,7 +685,7 @@
                     :audio="require('@/assets/curso/tema1/audio69.mp3')"
                     @audio-hover="mostrarIndicadorTarjetaAudio = false"
                   )
-    .row.mb-5
+    .row.mb-5(data-aos="fade-left")
       .col-lg-7.mb-4.mb-lg-0
         Traduccion.color-primario(:dialogo="traduccion2")
       .col-lg-4
@@ -693,11 +693,11 @@
           img(src='@/assets/curso/tema1/img10.png', style="width: 350px").m-auto
     p #[i.txt-color3 Now you can watch a video to better understand the pronunciation rules for words ending in -ed, and listen to the following audios to review the pronunciation of each word.]
     p.mb-5 Ahora observe un video para entender mejor las normas de pronunciación de las palabras terminadas en -ed, y escuche los siguientes audios para repasar la pronunciación de cada palabra.
-    figure.mb-5
+    figure.mb-5(data-aos="fade-up")
       .video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/PZR9TDdKJAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     p.mb-5 La pronunciación de los verbos terminados en #[i.txt-color2 “-ed”] depende del sonido final. Hay tres maneras de pronunciar #[i.txt-color2 “-ed”]. Lea y escuche algunos ejemplos con su correspondiente pronunciación en #[i.txt-color2 /id/, /t/ o /d/].
-    .row.mb-5
+    .row.mb-5(data-aos="fade-down")
       .col-lg
         .p-1.h-100
           .tarjeta-avatar
@@ -917,7 +917,7 @@
                       :audio="require('@/assets/curso/tema1/audio29.mp3')"
                       no-barra
                     )
-    .row
+    .row(data-aos="fade-right")
       .col-12.bg-color5
         .p-4
           .row.align-items-center.justify-content-center
@@ -931,21 +931,21 @@
               p.mb-0 Las palabras que terminan en un sonido de vocal usan la pronunciación /d/ para “-ed”.
             .col-lg-auto.mx-1.mb-4.mb-lg-0
               .row.justify-content-center.mb-4
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>followed</span></em>"
                     :audio="require('@/assets/curso/tema1/audio4.mp3')"
                     no-barra
                   )
               .row.justify-content-center.mb-4
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>played</span></em>"
                     :audio="require('@/assets/curso/tema1/audio6.mp3')"
                     no-barra
                   )
               .row.justify-content-center
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>tried</span></em>"
                     :audio="require('@/assets/curso/tema1/audio8.mp3')"
@@ -953,21 +953,21 @@
                   )
             .col-lg-auto.mx-1
               .row.justify-content-center.mb-4
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>continued</span></em>"
                     :audio="require('@/assets/curso/tema1/audio5.mp3')"
                     no-barra
                   )
               .row.justify-content-center.mb-4
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>enjoyed</span></em>"
                     :audio="require('@/assets/curso/tema1/audio7.mp3')"
                     no-barra
                   )
               .row.justify-content-center
-                .col-6.col-lg
+                .col-8.col-lg
                   TarjetaAudio.color-primario(
                     texto="<em><span>prayed</span></em>"
                     :audio="require('@/assets/curso/tema1/audio9.mp3')"
@@ -977,7 +977,7 @@
     #t_1_2
     .titulo-segundo.color-acento-botones
       h2 1.2 #[i Irregular verbs] (Verbos irregulares)
-    .row.justify-content-end.mb-4
+    .row.justify-content-end.mb-4(data-aos="fade-left")
       .col-lg-2.mb-4.mb-lg-0
         figure
           img(src='@/assets/curso/tema1/img21.svg', style="width: 150px").m-auto
@@ -988,7 +988,7 @@
       .col-auto.bg-color50
         .p-2
           p.mb-0 #[i.txt-color2 Irregular verbs] - Verbos irregulares
-    .row.mb-3
+    .row.mb-3(data-aos="fade-right")
       .col-12.bg-color51
         .py-4.px-2
           .row
@@ -1140,7 +1140,7 @@
                     p.mb-0 #[b #[i.txt-color1 Fall]]
                   .col-4
                     p.mb-0 #[b #[i.txt-color7 Fell]]
-    .row.mb-3
+    .row.mb-3(data-aos="fade-left")
       .col-12.bg-color51
         .py-4.px-2
           .row
@@ -1280,7 +1280,7 @@
                     p.mb-0 #[b #[i.txt-color1 Have]]
                   .col-4
                     p.mb-0 #[b #[i.txt-color7 Had]]
-    .row.mb-3
+    .row.mb-3(data-aos="fade-right")
       .col-12.bg-color51
         .py-4.px-2
           .row
@@ -1422,7 +1422,7 @@
                     p.mb-0 #[b #[i.txt-color1 Put]]
                   .col-4
                     p.mb-0 #[b #[i.txt-color7 Put]]
-    .row.mb-3
+    .row.mb-3(data-aos="fade-left")
       .col-12.bg-color51
         .py-4.px-2
           .row
@@ -1562,7 +1562,7 @@
                     p.mb-0 #[b #[i.txt-color1 Sleep]]
                   .col-4
                     p.mb-0 #[b #[i.txt-color7 Slept]]
-    .row.mb-3
+    .row.mb-3(data-aos="fade-right")
       .col-12.bg-color51
         .py-4.px-2
           .row
@@ -1716,7 +1716,7 @@
                     p.mb-0 #[b #[i.txt-color1 Write]]
                   .col-4
                     p.mb-0 #[b #[i.txt-color7 Wrote]]
-    .row
+    .row.bg-color58(data-aos="fade-up")
       .col-12
         .row.justify-content-end
           .col-lg-10
@@ -1726,7 +1726,7 @@
         .row.bg-color20
           .col-lg-2
             figure.fig-position
-              img(src='@/assets/curso/tema1/img12.svg', style="width: 100px").m-auto
+              img(src='@/assets/curso/tema1/img12.svg', style="width: 150px").m-auto
           .col-lg-10
             .p-4
               .row.align-items-end
@@ -1741,13 +1741,13 @@
     #t_1_3
     .titulo-segundo.color-acento-botones
       h2 1.3 #[i Affirmative, negative and interrogative structures] (Estructuras afirmativas, negativas e interrogativas)
-    .row.justify-content-end.mb-4
+    .row.justify-content-end.mb-4(data-aos="fade-right")
       .col-lg-4.mb-4.mb-lg-0
         figure
-          img(src='@/assets/curso/tema1/img12.png', style="width: 350px")
+          img(src='@/assets/curso/tema1/img12.png', style="width: 350px").m-auto
       .col-lg-7
         Traduccion.color-primario(:dialogo="traduccion4")
-    .tarjeta.tarjeta--amarilla.p-1.mb-5
+    .tarjeta.tarjeta--amarilla.p-1.mb-5(data-aos="fade-up")
       SlyderA
         .row.justify-content-center.mx-1.p-1.p-lg-4
           .col-lg-10
@@ -1992,7 +1992,7 @@
                     texto=""
                     :audio="require('@/assets/curso/tema1/audio72.mp3')"
                   )
-    .row.mb-5
+    .row.bg-color58.mb-5(data-aos="fade-up")
       .col-12
         .row.justify-content-end
           .col-lg-10
@@ -2002,7 +2002,7 @@
         .row.bg-color20
           .col-lg-2
             figure.fig-position
-              img(src='@/assets/curso/tema1/img12.svg', style="width: 100px").m-auto
+              img(src='@/assets/curso/tema1/img12.svg', style="width: 150px").m-auto
           .col-lg-10
             .p-4
               p.mb-4 #[b #[i.txt-color4 Negative structure] #[span.text-white / Estructura negativa]]
@@ -2010,7 +2010,7 @@
               p.mb-4 #[i.txt-color4 The auxiliary verb “did” accompanies the main verbs so that they work in other forms, such as questions, short answers, negatives, etc. Did is used for all grammatical persons without exception, and has no translation into Spanish.]
               p.text-white.mb-0 De aquí en adelante se tiene que tener en cuenta un componente extra para formar las siguientes estructuras gramaticales. Se trata del auxiliar #[i “did”].
               p.text-white El verbo auxiliar “did” acompaña a los verbos principales para que funcionen en otras formas, como preguntas, respuestas cortas, negativas, etc. Did se usa para todas las personas gramaticales sin excepción, y no tiene traducción al español.
-    .row.mb-5
+    .row.bg-color58.mb-5(data-aos="fade-up")
       .col-12
         .row.justify-content-end
           .col-lg-10
@@ -2020,7 +2020,7 @@
         .row.bg-color20
           .col-lg-2
             figure.fig-position
-              img(src='@/assets/curso/tema1/img12.svg', style="width: 100px").m-auto
+              img(src='@/assets/curso/tema1/img12.svg', style="width: 150px").m-auto
           .col-lg-10
             .p-4
               p.mb-4 #[i.txt-color4 To the "yes" or "no" questions, we can answer in a short way:]
@@ -2029,8 +2029,8 @@
               p.text-white.mb-4 A las preguntas de “sí” o “no”, se puede responder de forma corta:
               p.text-white.mb-0 #[b Sí = Yes, sujeto + did.]
               p.text-white.mb-0 #[b No = No, sujeto + didn't.]
-    .row.justify-content-evenly
-      .col-lg-5.bg-color13.mb-4.mb-lg-0
+    .row.justify-content-evenly.mb-5
+      .col-lg-5.bg-color13.mb-4.mb-lg-0(data-aos="fade-right")
         .p-3
           figure.mb-4
             img(src='@/assets/curso/tema1/img16.svg', style="width: 100px")
@@ -2053,7 +2053,7 @@
                 :audio="require('@/assets/curso/tema1/audio75.mp3')"
               )
               p.ms-3 No.
-      .col-lg-5.bg-color14
+      .col-lg-5.bg-color14(data-aos="fade-left")
         .p-3
           figure.mb-4
             img(src='@/assets/curso/tema1/img17.svg', style="width: 100px")
@@ -2076,15 +2076,31 @@
                 :audio="require('@/assets/curso/tema1/audio78.mp3')"
               )
               p.ms-3 No.
+    p.mb-5 A continuación, escuche el siguiente diálogo, en el cual se aplica lo estudiado en el tema.
+    .row.align-items-end.bg-color60(data-aos="fade-right")
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema1/img19.png', style="width: 260px")
+      .col-lg-6
+        DialogoChat(:dialogo="dialogoChat")
+        TarjetaAudio.color-primario.mb-4(
+          texto="<em><span></span></em>"
+          :audio="require('@/assets/curso/tema3/audio24.mp3')"
+        )
+      .col-lg-3.d-none.d-lg-block
+        figure
+          img(src='@/assets/curso/tema1/img20.png')
 
 </template>
 
 <script>
+import DialogoChat from '../components/DialogoChat.vue'
 import Traduccion from '../components/Traduccion.vue'
 export default {
   name: 'Tema1',
   components: {
     Traduccion,
+    DialogoChat,
   },
   data: () => ({
     mostrarIndicador: true,
@@ -2130,6 +2146,52 @@ export default {
             'In the simple past, the structures of sentences that use the verb "to be" as the main verb are different from sentences that use other verbs as the main verb (regardless of whether they are in the same tense). Let´s see the phrases (or grammatical structures) used to express this information:',
           textoEsp:
             'En el pasado simple son diferentes las estructuras de las oraciones que usan el verbo "to be" como verbo principal a las oraciones que usan otros verbos como verbo principal (sin importar que estén en el mismo tiempo verbal). Vamos a ver las frases (o estructuras gramaticales) usadas para expresar esta información:',
+        },
+      ],
+    },
+    dialogoChat: {
+      personajes: [
+        {
+          nombre: 'Sandra',
+          img: require('@/assets/curso/tema1/img17.png'),
+        },
+        {
+          nombre: 'Samuel',
+          img: require('@/assets/curso/tema1/img18.png'),
+        },
+      ],
+      dialogo: [
+        {
+          personaje: 'Sandra',
+          textoIng: 'Hi, Samuel.',
+        },
+        {
+          personaje: 'Samuel',
+          textoIng: 'Hello, Sandra.',
+        },
+        {
+          personaje: 'Sandra',
+          textoIng: 'What is that?',
+        },
+        {
+          personaje: 'Samuel',
+          textoIng: 'That is my new car.',
+        },
+        {
+          personaje: 'Sandra',
+          textoIng: 'Why did you buy it?',
+        },
+        {
+          personaje: 'Samuel',
+          textoIng: 'I bought it because my old car was malfunctioning.',
+        },
+        {
+          personaje: 'Sandra',
+          textoIng: 'That is great. Did you pay with your credit card?',
+        },
+        {
+          personaje: 'Samuel',
+          textoIng: 'No. I paid it up front and they gave it to me yesterday.',
         },
       ],
     },
