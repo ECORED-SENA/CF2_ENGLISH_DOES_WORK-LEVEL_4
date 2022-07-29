@@ -82,7 +82,7 @@ export default {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: '<em>Let´s talk about history</em> (Hablemos de historia)',
+        titulo: '<em>Let&apos;s talk about history</em> (Hablemos de historia)',
         desarrolloContenidos: true,
         subMenu: [
           {

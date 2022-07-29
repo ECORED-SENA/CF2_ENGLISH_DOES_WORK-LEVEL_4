@@ -43,7 +43,6 @@
         button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='16' aria-label='Slide 17')
         button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='17' aria-label='Slide 18')
         button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='18' aria-label='Slide 19')
-        button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='19' aria-label='Slide 20')
       .carousel-inner
         .carousel-item.active
           .row.justify-content-center
@@ -141,47 +140,6 @@
                       .col-12.bg-color16
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
-                            texto="<em><span>Why?</span></em>"
-                            :audio="require('@/assets/curso/tema2/audio5.mp3')"
-                          )
-                          p.ms-3 ¿Por qué?
-                  .col-lg-4
-                    .row
-                      .col-12.bg-color18
-                        .p-2
-                          p.mb-0.text-center #[b #[i.txt-color1 Function]]
-                          p.mb-0.text-center #[b Función]
-                      .col-12.bg-color16
-                        .p-2
-                          p #[i.txt-color2 Asking for reason, motive, explanation.]
-                          p Preguntar por una razón, motivo, explicación.
-                  .col-lg-5
-                    .row
-                      .col-12.bg-color19
-                        .p-2
-                          p.mb-0.text-center #[b #[i.txt-color1 Example sentence]]
-                          p.mb-0.text-center #[b Oración de ejemplo]
-                      .col-12.bg-color16
-                        .p-2
-                          TarjetaAudio.color-primario.mb-2(
-                            texto="<em><span>Why did the Second World War start?</span></em>"
-                            :audio="require('@/assets/curso/tema2/audio6.mp3')"
-                          )
-                          p.ms-3 ¿Por qué comenzó la Segunda Guerra Mundial?
-        .carousel-item
-          .row.justify-content-center
-            .col-lg-10.bg-color11
-              .p-4
-                .row
-                  .col-lg-3
-                    .row
-                      .col-12.bg-color17
-                        .p-2
-                          p.mb-0.text-center #[b #[i.txt-color1 Question Word]]
-                          p.mb-0.text-center #[b Palabra interrogativa]
-                      .col-12.bg-color16
-                        .p-2
-                          TarjetaAudio.color-primario.mb-2(
                             texto="<em><span>What?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio7.mp3')"
                           )
@@ -264,7 +222,7 @@
                       .col-12.bg-color16
                         .p-2
                           TarjetaAudio.color-primario.mb-2(
-                            texto="<em><span>What … for?</span></em>"
+                            texto="<em><span>What… for?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio11.mp3')"
                           )
                           p.ms-3 ¿Para qué?
@@ -513,7 +471,7 @@
                             texto="<em><span>How long?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio23.mp3')"
                           )
-                          p.ms-3 ¿Cuán largo? *
+                          p.ms-3 ¿Cuán largo?
                   .col-lg-4
                     .row
                       .col-12.bg-color18
@@ -554,7 +512,7 @@
                             texto="<em><span>How long?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio25.mp3')"
                           )
-                          p.ms-3 ¿Cuánto tiempo? **
+                          p.ms-3 ¿Cuánto tiempo?
                   .col-lg-4
                     .row
                       .col-12.bg-color18
@@ -677,7 +635,7 @@
                             texto="<em><span>How much?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio31.mp3')"
                           )
-                          p.ms-3 ¿Cuánto cuesta? *
+                          p.ms-3 ¿Cuánto cuesta?
                   .col-lg-4
                     .row
                       .col-12.bg-color18
@@ -718,7 +676,7 @@
                             texto="<em><span>How much?</span></em>"
                             :audio="require('@/assets/curso/tema2/audio33.mp3')"
                           )
-                          p.ms-3 ¿Cuánto? ¿Cuánta? **
+                          p.ms-3 ¿Cuánto? ¿Cuánta?
                   .col-lg-4
                     .row
                       .col-12.bg-color18
@@ -953,13 +911,13 @@
                       p.mb-4 #[i.txt-color2 did]
                     .col-auto
                       p.mb-0.mt-4 #[i.txt-color1 I]
-                      p.mb-0 #[i.txt-color1 You]
-                      p.mb-0 #[i.txt-color1 He]
-                      p.mb-0 #[i.txt-color1 She]
-                      p.mb-4 #[i.txt-color1 It]
-                      p.mb-0 #[i.txt-color1 We]
-                      p.mb-0 #[i.txt-color1 You]
-                      p.mb-4 #[i.txt-color1 They]
+                      p.mb-0 #[i.txt-color1 you]
+                      p.mb-0 #[i.txt-color1 he]
+                      p.mb-0 #[i.txt-color1 she]
+                      p.mb-4 #[i.txt-color1 it]
+                      p.mb-0 #[i.txt-color1 we]
+                      p.mb-0 #[i.txt-color1 you]
+                      p.mb-4 #[i.txt-color1 they]
                     .col-auto.bg-color52
                       p.mb-0.mt-4 #[i.txt-color2 live]
                       p.mb-0 #[i.txt-color2 draw]
