@@ -2023,12 +2023,15 @@
               img(src='@/assets/curso/tema1/img12.svg', style="width: 150px").m-auto
           .col-lg-10
             .p-4
-              p.mb-4 #[i.txt-color4 To the "yes" or "no" questions, we can answer in a short way:]
-              p.mb-0 #[b.txt-color4 Yes = Yes, subject + did.]
-              p.mb-4 #[b.txt-color4 No = No, subject + didn't.]
-              p.text-white.mb-4 A las preguntas de “sí” o “no”, se puede responder de forma corta:
-              p.text-white.mb-0 #[b Sí = Yes, sujeto + did.]
-              p.text-white.mb-0 #[b No = No, sujeto + didn't.]
+              .row
+                .col-lg-6.mb-4.mb-lg-0
+                  p.mb-4 #[i.txt-color4 To the "yes" or "no" questions, we can answer in a short way:]
+                  p.mb-0 #[b.txt-color4 Yes = Yes, subject + did.]
+                  p.mb-4 #[b.txt-color4 No = No, subject + didn't.]
+                .col-lg-6
+                  p.text-white.mb-4 A las preguntas de “sí” o “no”, se puede responder de forma corta:
+                  p.text-white.mb-0 #[b Sí = Yes, sujeto + did.]
+                  p.text-white.mb-0 #[b No = No, sujeto + didn't.]
     .row.justify-content-evenly.mb-5
       .col-lg-5.bg-color13.mb-4.mb-lg-0(data-aos="fade-right")
         .p-3
@@ -2085,7 +2088,7 @@
         DialogoChat(:dialogo="dialogoChat")
         TarjetaAudio.color-primario.mb-4(
           texto="<em><span></span></em>"
-          :audio="require('@/assets/curso/tema3/audio24.mp3')"
+          :audio="require('@/assets/curso/tema1/audio131.mp3')"
         )
       .col-lg-3.d-none.d-lg-block
         figure

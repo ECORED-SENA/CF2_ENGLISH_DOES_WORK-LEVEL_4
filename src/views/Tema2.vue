@@ -1004,7 +1004,7 @@
         DialogoChat(:dialogo="dialogoChat")
         TarjetaAudio.color-primario.mb-4(
           texto="<em><span></span></em>"
-          :audio="require('@/assets/curso/tema3/audio24.mp3')"
+          :audio="require('@/assets/curso/tema2/audio42.mp3')"
         )
       .col-lg-3.d-none.d-lg-block
         figure
