@@ -954,7 +954,7 @@
                   :audio="require('@/assets/curso/tema2/audio41.mp3')"
                   )
     p.mb-5 A continuación, escuche el siguiente diálogo, en el cual se aplica lo estudiado en el tema.
-    .row.align-items-end.bg-color60(data-aos="fade-right")
+    .row.align-items-end.bg-color60.mb-5(data-aos="fade-right")
       .col-lg-3.d-none.d-lg-block
         figure
           img(src='@/assets/curso/tema2/img6.png')
@@ -967,6 +967,23 @@
       .col-lg-3.d-none.d-lg-block
         figure
           img(src='@/assets/curso/tema2/img7.png', style="width: 270px")
+    .row.justify-content-center.align-items-center.align-items-lg-stretch(data-aos="fade-right")
+      .col-6.col-md-4.col-lg-3.mb-4.mb-md-0
+        .tarjeta.h-100.d-flex.align-items-center.p-4
+          figure
+            img(src="@/assets/template/seleccion-multiple.svg", alt="Texto que describa la imagen")
+      .col-12.col-md-8.col-lg-9
+        .titulo-segundo
+          h2 #[i Say if the sentence is correct.] / Diga si la oración es correcta.
+        p.mb-4 #[b Objetivo]. Reforzar conocimientos acerca de las estructuras de oraciones en el tiempo pasado simple.
+        .tarjeta.actividad.p-3
+          .row.justify-content-around.align-items-center            
+            .col-sm.mb-3.mb-sm-0
+              p.fw-bold.mb-0 Opción múltiple, única respuesta.
+            .col-auto
+              a.boton.boton--b(:href="obtenerLink('/actividades/actividad2/index.html')" target="_blank")
+                span Realizar
+                i.fas.fa-puzzle-piece
 
 </template>
 
