@@ -190,7 +190,7 @@
         p #[i.txt-color3 We are going to learn the correct spelling of words that end in “-ed” and we will mainly use regular past tense verbs as examples, although the same rules apply to all words that end in “-ed”.]
         p Vamos a aprender, en el siguiente recurso, la ortografía correcta de las palabras que terminan en #[i.txt-color2 “-ed”] y usaremos principalmente verbos regulares en pasado como ejemplos, aunque las mismas reglas se aplican a todas las palabras que terminan en #[i.txt-color2 “-ed”].
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")(data-aos="fade-right")
-      .row(titulo="<span>General Rule</span> / Regla general")
+      .row(titulo="<span><i>General Rule</i></span> / Regla general")
         .col-lg-4.mb-4.mb-lg-0
           figure
             img(src='@/assets/curso/tema1/img4.png', style="width: 350px").m-auto
@@ -236,7 +236,7 @@
                     p.mb-0 #[i.txt-color2 returned]
                   .col-auto
                     Audio.color-primario(:audio="require('@/assets/curso/tema1/audio44.mp3')")
-      .row(titulo="<span>Words ending in &quot;Consonant + E&quot;</span> / Palabras que terminan en &quot;Consonante + E&quot;")
+      .row(titulo="<span><i>Words ending in &quot;Consonant + E&quot;</i></span> / Palabras que terminan en &quot;Consonante + E&quot;")
         .col-lg-4.mb-4.mb-lg-0
           figure
             img(src='@/assets/curso/tema1/img4.png', style="width: 350px").m-auto
@@ -282,7 +282,7 @@
                     p.mb-0 #[i.txt-color2 exercised]
                   .col-auto
                     Audio.color-primario(:audio="require('@/assets/curso/tema1/audio47.mp3')")
-      .row(titulo="<span>Consonant + Vowel + Consonant</span> / Consonante + Vocal + Consonante")
+      .row(titulo="<span><i>Consonant + Vowel + Consonant</i></span> / Consonante + Vocal + Consonante")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If it ends in C+V+C and the last syllable is stressed, we double the final consonant.]
           p Si termina en C+V+C y la última sílaba está acentuada, #[b se duplica la consonante final].
@@ -367,7 +367,7 @@
                     p.mb-0 #[i.txt-color2 remembered]
                   .col-auto
                     Audio.color-primario(:audio="require('@/assets/curso/tema1/audio53.mp3')")
-      .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
+      .row(titulo="<span><i>Words ending in Y</i></span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
           p #[i.txt-color2 If the verb ends in “C+Y”: the “y” is removed and we add “ -ied”.]
           p Si el verbo termina en “C+Y”: se elimina la #[b “y”] y se añade #[i.txt-color2 “-ied”].
@@ -452,7 +452,7 @@
                     p.mb-0 #[i.txt-color2 enjoyed]
                   .col-auto
                     Audio.color-primario(:audio="require('@/assets/curso/tema1/audio59.mp3')")
-      .row(titulo="<span>Words ending in “W” or “X”</span> / Palabras terminadas en “W” o “X”")
+      .row(titulo="<span><i>Words ending in “W” or “X”</i></span> / Palabras terminadas en “W” o “X”")
         .col-lg-4.mb-4.mb-lg-0
           figure
             img(src='@/assets/curso/tema1/img4.png', style="width: 350px").m-auto
@@ -540,7 +540,7 @@
                         p.mb-0 #[i.txt-color2 relaxed]
                       .col-auto
                         Audio.color-primario(:audio="require('@/assets/curso/tema1/audio65.mp3')")
-      .row(titulo="<span>Words ending in Y</span> / Palabras terminadas en Y")
+      .row(titulo="<span><i>Words ending in Y</i></span> / Palabras terminadas en Y")
         .col-lg-6.mb-4.mb-lg-0
           .row.mb-5
             .col-auto
@@ -1331,8 +1331,7 @@
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
-                    p.mb-0 Mantener
-                    p.mb-0 Conservar
+                    p.mb-0 Mantener / Conservar
                   .col-3
                     p.mb-0 #[b #[i.txt-color1 Keep]]
                   .col-4
@@ -1392,8 +1391,7 @@
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
-                    p.mb-0 Reunirse
-                    p.mb-0 Conocerse
+                    p.mb-0 Reunirse / Conocerse
                   .col-3
                     p.mb-0 #[b #[i.txt-color1 Meet]]
                   .col-4
@@ -1465,7 +1463,7 @@
                   .col-3
                     p.mb-0 #[b #[i.txt-color1 Read]]
                   .col-4
-                    p.mb-0 #[b #[i.txt-color7 Read*]]
+                    p.mb-0 #[b #[i.txt-color7 Read]]
                 .row.align-items-center.mb-2
                   .col-2
                     Audio.m-auto.color-primario(
@@ -1625,8 +1623,7 @@
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
-                    p.mb-0 Tomar
-                    p.mb-0 Agarrar
+                    p.mb-0 Tomar / Agarrar
                   .col-3
                     p.mb-0 #[b #[i.txt-color1 Take]]
                   .col-4
@@ -1686,8 +1683,7 @@
                       @audio-hover="mostrarIndicadorAudio = false"
                     )
                   .col-3
-                    p.mb-0 Vestir
-                    p.mb-0 Llevar puesto
+                    p.mb-0 Vestir / Llevar puesto
                   .col-3
                     p.mb-0 #[b #[i.txt-color1 Wear]]
                   .col-4
@@ -1864,13 +1860,13 @@
                       p.mb-4 #[i.txt-color1 They]
                     .col-auto.bg-color54
                       p.mb-0.mt-4 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 did not]
                       p.mb-0 #[i.txt-color2 didn’t]
-                      p.mb-0 #[i.txt-color2 didn’t]
-                      p.mb-0 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 did not]
                       p.mb-4 #[i.txt-color2 didn’t]
+                      p.mb-0 #[i.txt-color2 did not]
                       p.mb-0 #[i.txt-color2 didn’t]
-                      p.mb-0 #[i.txt-color2 didn’t]
-                      p.mb-4 #[i.txt-color2 didn’t]
+                      p.mb-4 #[i.txt-color2 did not]
                     .col-auto.bg-color52
                       p.mb-0.mt-4 #[i.txt-color2 live]
                       p.mb-0 #[i.txt-color2 draw]
@@ -1940,23 +1936,23 @@
                 .col-lg-6.mb-4.mb-lg-0.bg-color53
                   .row.mb-4.mb-lg-0
                     .col-auto.bg-color54
-                      p.mb-0.mt-4 #[i.txt-color2 did]
-                      p.mb-0 #[i.txt-color2 did]
-                      p.mb-0 #[i.txt-color2 did]
-                      p.mb-0 #[i.txt-color2 did]
-                      p.mb-4 #[i.txt-color2 did]
-                      p.mb-0 #[i.txt-color2 did]
-                      p.mb-0 #[i.txt-color2 did]
-                      p.mb-4 #[i.txt-color2 did]
+                      p.mb-0.mt-4 #[i.txt-color2 Did]
+                      p.mb-0 #[i.txt-color2 Did]
+                      p.mb-0 #[i.txt-color2 Did]
+                      p.mb-0 #[i.txt-color2 Did]
+                      p.mb-4 #[i.txt-color2 Did]
+                      p.mb-0 #[i.txt-color2 Did]
+                      p.mb-0 #[i.txt-color2 Did]
+                      p.mb-4 #[i.txt-color2 Did]
                     .col-2
                       p.mb-0.mt-4 #[i.txt-color1 I]
-                      p.mb-0 #[i.txt-color1 You]
-                      p.mb-0 #[i.txt-color1 He]
-                      p.mb-0 #[i.txt-color1 She]
-                      p.mb-4 #[i.txt-color1 It]
-                      p.mb-0 #[i.txt-color1 We]
-                      p.mb-0 #[i.txt-color1 You]
-                      p.mb-4 #[i.txt-color1 They]
+                      p.mb-0 #[i.txt-color1 you]
+                      p.mb-0 #[i.txt-color1 he]
+                      p.mb-0 #[i.txt-color1 she]
+                      p.mb-4 #[i.txt-color1 it]
+                      p.mb-0 #[i.txt-color1 we]
+                      p.mb-0 #[i.txt-color1 you]
+                      p.mb-4 #[i.txt-color1 they]
                     .col-auto.bg-color52
                       p.mb-0.mt-4 #[i.txt-color2 live]
                       p.mb-0 #[i.txt-color2 draw]
@@ -2009,7 +2005,7 @@
               p.mb-0 #[i.txt-color4 From here on we have to take into account an extra component to form the following grammatical structures. This is the auxiliary “did”.]
               p.mb-4 #[i.txt-color4 The auxiliary verb “did” accompanies the main verbs so that they work in other forms, such as questions, short answers, negatives, etc. Did is used for all grammatical persons without exception, and has no translation into Spanish.]
               p.text-white.mb-0 De aquí en adelante se tiene que tener en cuenta un componente extra para formar las siguientes estructuras gramaticales. Se trata del auxiliar #[i “did”].
-              p.text-white El verbo auxiliar “did” acompaña a los verbos principales para que funcionen en otras formas, como preguntas, respuestas cortas, negativas, etc. Did se usa para todas las personas gramaticales sin excepción, y no tiene traducción al español.
+              p.text-white El verbo auxiliar #[i “did”] acompaña a los verbos principales para que funcionen en otras formas, como preguntas, respuestas cortas, negativas, etc. #[i Did] se usa para todas las personas gramaticales sin excepción, y no tiene traducción al español.
     .row.bg-color58.mb-5(data-aos="fade-up")
       .col-12
         .row.justify-content-end
@@ -2049,7 +2045,7 @@
                 texto="<em><span>Yes, I did.</span></em>"
                 :audio="require('@/assets/curso/tema1/audio74.mp3')"
               )
-              p.ms-3 Si.
+              p.ms-3 Sí.
             .col-lg-6
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>No, I didn't.</span></em>"
@@ -2072,7 +2068,7 @@
                 texto="<em><span>Yes, they did.</span></em>"
                 :audio="require('@/assets/curso/tema1/audio77.mp3')"
               )
-              p.ms-3 Si.
+              p.ms-3 Sí.
             .col-lg-6
               TarjetaAudio.color-secundario.mb-2(
                 texto="<em><span>No, they didn't.</span></em>"
@@ -2135,7 +2131,7 @@ export default {
           textoIng:
             'The past simple is the tense used to describe an action that happened before the present tense and that is no longer happening.<br><br>In the simple past tense there is only one form or conjugation of each verb in the past tense for all grammatical persons (with the exception of the verb “to be” which has two forms: “was” and “were”). With most verbs, the past tense is formed by adding “-ed”, these verbs are called regular verbs; the ones that do not fall into this group with the ending “-ed” are called irregular verbs and must be learned by heart since there is no rule to help us predict their form in the past tense.',
           textoEsp:
-            'El pasado simple es el tiempo que se usa para describir una acción que sucedió antes del tiempo presente y que ya no está sucediendo.<br><br>En el tiempo pasado simple, solo hay una forma o conjugación de cada verbo en pasado para todas las personas gramaticales (con excepción del verbo <b>“to be”</b>, que tiene dos formas: <b>“was”</b> y <b>“were”</b>). Con la mayoría de los verbos, el tiempo pasado se forma agregando <b>“-ed”</b>, a estos verbos se les llama verbos regulares; a los que no están en este grupo con terminación <b>“-ed”</b> se les llama verbos irregulares y deben aprenderse de memoria debido a que no hay una regla que nos ayude a predecir su forma en pasado.',
+            'El pasado simple es el tiempo que se usa para describir una acción que sucedió antes del tiempo presente y que ya no está sucediendo.<br><br>En el tiempo pasado simple, solo hay una forma o conjugación de cada verbo en pasado para todas las personas gramaticales (con excepción del verbo <b><i>“to be”</i></b>, que tiene dos formas: <b><i>“was”</i></b> y <b><i>“were”</i></b>). Con la mayoría de los verbos, el tiempo pasado se forma agregando <b>“-ed”</b>, a estos verbos se les llama verbos regulares; a los que no están en este grupo con terminación <b>“-ed”</b> se les llama verbos irregulares y deben aprenderse de memoria debido a que no hay una regla que nos ayude a predecir su forma en pasado.',
         },
       ],
     },
