@@ -1035,7 +1035,7 @@ export default {
         },
         {
           personaje: 'Ana',
-          textoIng: 'I was born in Barranquilla, but I grew up in Bogota.',
+          textoIng: 'I was born in Barranquilla, but I grew up in Bogotá.',
         },
         {
           personaje: 'Juan',
@@ -1047,7 +1047,7 @@ export default {
         },
         {
           personaje: 'Juan',
-          textoIng: 'I was born in Bogota, but I grew up in Medellin.',
+          textoIng: 'I was born in Bogotá, but I grew up in Medellín.',
         },
         {
           personaje: 'Ana',

@@ -353,7 +353,7 @@
                   .col-auto
                     p.mb-0 #[i.txt-color2 visited]
                   .col-auto
-                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio52.mp3')"**Falta audio52)
+                    Audio.color-primario(:audio="require('@/assets/curso/tema1/audio52.mp3')")
           .row.mx-1
             .col-auto.bg-color49
               .p-2
@@ -540,7 +540,7 @@
                         p.mb-0 #[i.txt-color2 relaxed]
                       .col-auto
                         Audio.color-primario(:audio="require('@/assets/curso/tema1/audio65.mp3')")
-      .row(titulo="<span><i>Words ending in Y</i></span> / Palabras terminadas en Y")
+      .row(titulo="<span><i>Words ending in L</i></span> / Palabras terminadas en L")
         .col-lg-6.mb-4.mb-lg-0
           .row.mb-5
             .col-auto
@@ -1792,7 +1792,7 @@
                       p.mb-4 #[i.txt-color2 bought]
                     .col-6
                       p.mb-0.mt-4 #[i.txt-color1 in Spain.] 
-                      p.mb-0 #[i.txt-color1 that painting.] 
+                      p.mb-0 #[i.txt-color1 that.] 
                       p.mb-0 #[i.txt-color1 football yesterday.] 
                       p.mb-0 #[i.txt-color1 in a helicopter.] 
                       p.mb-4 #[i.txt-color1 really loud.] 
@@ -1803,7 +1803,7 @@
                   .row
                     .col-auto
                       p.mb-0.mt-4 #[i.txt-color1 Yo #[b viví] en España.]
-                      p.mb-0 #[i.txt-color1 Tú #[b dibujaste] esa pintura.]
+                      p.mb-0 #[i.txt-color1 Tú #[b dibujaste] eso.]
                       p.mb-0 #[i.txt-color1 Él #[b jugó] fútbol ayer.]
                       p.mb-0 #[i.txt-color1 Ella #[b voló] en un helicóptero.]
                       p.mb-4 #[i.txt-color1 (Eso) #[b Ladró] muy fuerte.]
@@ -1889,7 +1889,7 @@
                   .row
                     .col-auto
                       p.mb-0.mt-4 #[i.txt-color1 Yo #[b no viví] en España.]
-                      p.mb-0 #[i.txt-color1 Tú #[b no dibujaste] eso pintura.]
+                      p.mb-0 #[i.txt-color1 Tú #[b no dibujaste] eso.]
                       p.mb-0 #[i.txt-color1 Él #[b no jugó] fútbol ayer.]
                       p.mb-0 #[i.txt-color1 Ella #[b no voló] en un helicóptero.]
                       p.mb-4 #[i.txt-color1 (Eso) #[b no Ladró] tan fuerte.]
@@ -1974,14 +1974,14 @@
                 .col-lg-5
                   .row
                     .col-auto
-                      p.mb-0.mt-4 #[i.txt-color1 Yo #[b viví] en España?]
-                      p.mb-0 #[i.txt-color1 Tú #[b dibujaste] eso pintura?]
-                      p.mb-0 #[i.txt-color1 Él #[b jugó] fútbol ayer?]
-                      p.mb-0 #[i.txt-color1 Ella #[b voló] en un helicóptero?]
-                      p.mb-4 #[i.txt-color1 (Eso) #[b Ladró] tan fuerte?]
-                      p.mb-0 #[i.txt-color1 Nosotros #[b nos comimos] todo el pastel?]
-                      p.mb-0 #[i.txt-color1 Ustedes #[b cocinaron] lasaña anoche?]
-                      p.mb-4 #[i.txt-color1 Ellos #[b compraron] una casa hace un año?]
+                      p.mb-0.mt-4 #[i.txt-color1 ¿Yo #[b viví] en España?]
+                      p.mb-0 #[i.txt-color1 ¿Tú #[b dibujaste] eso?]
+                      p.mb-0 #[i.txt-color1 ¿Él #[b jugó] fútbol ayer?]
+                      p.mb-0 #[i.txt-color1 ¿Ella #[b voló] en un helicóptero?]
+                      p.mb-4 #[i.txt-color1 ¿(Eso) #[b Ladró] fuerte?]
+                      p.mb-0 #[i.txt-color1 ¿Nosotros #[b nos comimos] todo el pastel?]
+                      p.mb-0 #[i.txt-color1 ¿Ustedes #[b cocinaron] lasaña anoche?]
+                      p.mb-4 #[i.txt-color1 ¿Ellos #[b compraron] una casa hace un año?]
             .row.justify-content-center
               .col-lg-10
                 TarjetaAudio.color-primario(
@@ -2003,9 +2003,9 @@
             .p-4
               p.mb-4 #[b #[i.txt-color4 Negative structure] #[span.text-white / Estructura negativa]]
               p.mb-0 #[i.txt-color4 From here on we have to take into account an extra component to form the following grammatical structures. This is the auxiliary “did”.]
-              p.mb-4 #[i.txt-color4 The auxiliary verb “did” accompanies the main verbs so that they work in other forms, such as questions, short answers, negatives, etc. Did is used for all grammatical persons without exception, and has no translation into Spanish.]
+              p.mb-4 #[i.txt-color4 The auxiliary verb “did” accompanies the main verbs so that they work in other forms, such as questions, short answers, negatives, etc. “Did” is used for all grammatical persons without exception, and has no translation into Spanish.]
               p.text-white.mb-0 De aquí en adelante se tiene que tener en cuenta un componente extra para formar las siguientes estructuras gramaticales. Se trata del auxiliar #[i “did”].
-              p.text-white El verbo auxiliar #[i “did”] acompaña a los verbos principales para que funcionen en otras formas, como preguntas, respuestas cortas, negativas, etc. #[i Did] se usa para todas las personas gramaticales sin excepción, y no tiene traducción al español.
+              p.text-white El verbo auxiliar #[i “did”] acompaña a los verbos principales para que funcionen en otras formas, como preguntas, respuestas cortas, negativas, etc. #[i “Did”] se usa para todas las personas gramaticales sin excepción, y no tiene traducción al español.
     .row.bg-color58.mb-5(data-aos="fade-up")
       .col-12
         .row.justify-content-end
